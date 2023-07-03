@@ -193,3 +193,35 @@ footer{
         
     }
 }
+@media  screen and (max-width:740) {
+    
+    #tabelas{
+   
+        height: 45%;
+        width: 390px;
+        display: grid;
+        background: var(--color-branco);
+        border-radius: 3%;
+        
+    }
+    
+    #tabela1{
+        display:grid;
+        grid-template-columns: repeat(2, 3fr);
+        padding-bottom: 20px;
+    }
+    #tabela2{
+        background: var(--color-amarelo);
+        color: var(--color-font-roxo);
+        text-align: center;
+        margin: 10px 30px;
+        height: 25px;
+        width: 130px;
+        border-radius: 5%;
+        font-weight: bold;
+        font-weight: 900;
+        cursor: pointer;
+        
+        
+    }
+}
