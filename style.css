@@ -21,10 +21,11 @@ body * {
 header{
     width:100%;
     background: var(--color-cinza);
-    padding-bottom: 10px;
+    padding-bottom: 0.5rem;
 }
 header li{
     text-align: center;
+    padding-bottom: 10px;
 }
 #enem{
     text-align: center;
@@ -44,7 +45,7 @@ header li{
     font-weight: bold;
     font-weight: 900;
     font-size: 80px;
-    text-align: center;
+    text-align: center; 
 }
 #texto3{
     padding-top: 0.5em;
@@ -56,12 +57,13 @@ header li{
     text-shadow: 0.01em 0.0em var(--color-cinza);
 }
 #texto4{
-    padding-top: 0.5em;
+    padding: 15px 0;
     color: var(--color-branco);
     font-weight: bold;
-    font-weight: 500;
+    font-weight: 900;
     font-size: 20px;
     text-align: center;
+    
 }
 
 
@@ -87,6 +89,7 @@ header li{
 #tabela1{
     display:grid;
     grid-template-columns: repeat(3, 2fr);
+    padding-bottom: 20px;
 }
 ul{
     padding-top: 10px;
@@ -104,4 +107,7 @@ ul{
     cursor: pointer;
     
     
+}
+#tabela1 :hover{
+    background: #ffde589f;
 }
