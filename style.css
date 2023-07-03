@@ -1,0 +1,105 @@
+:root{
+    --color-amarelo:#FFDD58;
+    --color-cinza:rgb(39,39,39);
+    --color-cinza-enem:rgb(49,49,49);
+    --color-branco:white;
+    --color-font-roxo: #551a8b;
+}
+
+body{
+    display: flex;
+    background: #FFDD58;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+body * {
+    font-family: 'Big Shoulders Display', cursiva;
+    text-decoration: none;
+}
+header{
+    width:100%;
+    background: var(--color-cinza);
+    padding-bottom: 10px;
+}
+header li{
+    text-align: center;
+}
+#enem{
+    text-align: center;
+    background: var(--color-cinza-enem);
+    width: 100%;
+}
+#cenexao{
+    color: var(--color-amarelo);
+    font-weight: bold;
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+}
+#enem2{
+    color: var(--color-amarelo);
+    font-weight: bold;
+    font-weight: 900;
+    font-size: 80px;
+    text-align: center;
+}
+#texto3{
+    color: var(--color-font-roxo);
+    font-weight: bold;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0.01em 0.0em rgb(128, 116, 116);
+}
+#texto4{
+    color: var(--color-branco);
+    font-weight: bold;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+#volume{
+    color: var(--color-font-roxo);
+    font-weight: bold;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 100px 30px 100px;
+    
+}
+#tabelas{
+   
+    height: 40%;
+    width: 500px;
+    display: grid;
+    background: var(--color-branco);
+    margin: 20px 420PX;
+    border-radius: 3%;
+    
+}
+#tabela1{
+    display:grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+ul{
+    padding-top: 10px;
+}
+#tabela2{
+    background: var(--color-amarelo);
+    color: var(--color-font-roxo);
+    text-align: center;
+    margin: 10px 30px;
+    height: 25px;
+    width: 100px;
+    border-radius: 5%;
+    font-weight: bold;
+    font-weight: 900;
+    cursor: pointer;
+    
+    
+}
+
