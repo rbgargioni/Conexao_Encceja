@@ -32,6 +32,7 @@ header li{
     width: 100%;
 }
 #cenexao{
+    padding-top: 0.5em;
     color: var(--color-amarelo);
     font-weight: bold;
     font-weight: 900;
@@ -46,14 +47,16 @@ header li{
     text-align: center;
 }
 #texto3{
+    padding-top: 0.5em;
     color: var(--color-font-roxo);
     font-weight: bold;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    text-shadow: 0.01em 0.0em rgb(128, 116, 116);
+    text-shadow: 0.01em 0.0em var(--color-cinza);
 }
 #texto4{
+    padding-top: 0.5em;
     color: var(--color-branco);
     font-weight: bold;
     font-weight: 500;
@@ -64,20 +67,20 @@ header li{
 
 #volume{
     color: var(--color-font-roxo);
-    font-weight: bold;
-    font-weight: 500;
-    font-size: 25px;
+    font-weight:bold;
+    font-weight: 900;
+    font-size: 30px;
     text-align: center;
     padding: 10px 100px 30px 100px;
     
 }
 #tabelas{
    
-    height: 40%;
+    height: 45%;
     width: 500px;
     display: grid;
     background: var(--color-branco);
-    margin: 20px 420PX;
+    margin: 50px 420PX;
     border-radius: 3%;
     
 }
@@ -102,4 +105,3 @@ ul{
     
     
 }
-
