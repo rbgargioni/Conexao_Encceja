@@ -8,7 +8,7 @@
 
 body{
     display: flex;
-    background: #FFDD58;
+    background: var(--color-amarelo);
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -110,6 +110,9 @@ ul{
 }
 #tabela1 :hover{
     background: #ffde589f;
+    transition-delay:50ms;
+    height: 26px;
+    width: 102px;
 }
 
 footer{
@@ -128,6 +131,64 @@ footer{
     width: 20px;
     padding: 5px;
 }
+
+/*videos*/
+
+#licao{
+    display:grid;
+    text-align: center;
+    justify-content:space-evenly;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+#licao h1{
+    margin: 10px;
+}
+#licao h2{
+    margin: 10px;
+    padding-bottom: 20px;
+
+}
+
+#palavra1{
+    color: var(--color-font-roxo);
+    font-size: 20px;
+    font-weight: bold;
+    justify-content:right;
+}
+#palavra2{
+    font-size: 20px;
+    font-weight: bold;
+    justify-content:left;
+}
+#assistir a{
+    text-align: justify;
+    color: var(--color-font-roxo);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#assistir{
+    border-radius: 0.5rem;
+    background: var(--color-amarelo);
+    
+    width: 40px;
+    height: 25px;
+}
+#assistir img{
+
+    height: 20px;
+}
+
+#container_aula{
+    display:grid;
+    grid-template-columns: repeat(3, 2fr);
+    padding-bottom: 20px;
+    
+
+}
+
 
 @media  screen and (max-width:800px) {
     
