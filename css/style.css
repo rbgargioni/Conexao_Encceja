@@ -204,3 +204,76 @@ h2.titulo-da-caixa{
     padding-bottom: 50PX;
     background: var(--color-cinza-enem);
 }
+
+@media  screen and (max-width:768px){
+html{
+    
+    width: 100%;
+    
+}
+#cenexao{
+
+    font-size: 60px;   
+}
+#enem2{
+    font-size: 100px;  
+}
+
+
+#texto3{
+
+    font-size:20px;
+}
+}
+@media  screen and (max-width:480px){
+
+    html{
+    
+        width: 100%;
+        
+    }
+    #cenexao{
+    
+        font-size: 60px;   
+    }
+    #enem2{
+        font-size: 100px;  
+    }
+    
+    
+    #texto3{
+    
+        font-size:20px;
+    } 
+    #quadrado-braco{
+   
+        height: 45%;
+        width: auto;
+        display: grid;
+        background: var(--color-branco);
+        margin: 50px 420PX;
+        border-radius: 1em;
+        box-shadow: 0 0.1rem 0.2rem #8f8e8e ;
+        
+    }
+    #tabela1{
+        display:grid;
+        grid-template-columns: repeat(2, 2fr);
+        padding-bottom: 20px;
+        
+    }   
+    /*Paginas VOLUMES*/
+#volume1-titulo{
+    width: auto;
+}
+h2.titulo-da-caixa{
+    width: 350px;
+}
+
+#container_aula{
+    display:flex;
+}
+}
+
+
+
