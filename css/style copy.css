@@ -6,6 +6,12 @@
     --color-font-roxo: #551a8b;
 }
 body {
+   
+    margin: 0;
+    height: 100vh; /* Define a altura do body como 100% da altura da tela */
+    background: linear-gradient(270deg, #ffe600, #ffee00, #e9ec38, #ffc13a);
+    background-size: 600% 600%; /* Ajusta o tamanho do gradiente para permitir o movimento */
+    animation: gradientMove 8s ease infinite;
     font-family: 'Big Shoulders Display', cursiva;
     text-decoration: none;
     justify-content: space-evenly;
@@ -16,9 +22,25 @@ body {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    background: var(--color-amarelo);
+   /* background: var(--color-amarelo);*/
     
 }
+
+
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
 body, html {
     margin: 0;
     padding: 0;
