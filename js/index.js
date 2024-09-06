@@ -17,7 +17,20 @@
             }(document));
         };   
   
-
+        function searchMenu() {
+            // Declarações
+            const input = document.getElementById('searchInput').value.toUpperCase();
+            const buttons = document.querySelectorAll('.botao-aulas');
+      
+            // Loop por cada botão e esconde aqueles que não correspondem à pesquisa
+            buttons.forEach(button => {
+              if (button.textContent.toUpperCase().indexOf(input) > -1) {
+                button.style.display = '';
+              } else {
+                button.style.display = 'none';
+              }
+            });
+          }
 // Função que verifica o fragmento da URL para executar a função correspondente
 function verificarFragmento() {
     // Obtém o fragmento da URL
