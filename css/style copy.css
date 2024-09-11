@@ -267,7 +267,7 @@ nav.container-propaganda{
     align-items: center;
 }
 .conexao{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 900;
     text-transform: uppercase;
     color: var(--color-cinza-enem);
@@ -328,8 +328,9 @@ p img {
 
 
 .enem{
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 900;
+    margin-bottom: 3rem;
     text-transform: uppercase;
     color: var(--color-cinza-enem);
     
@@ -474,7 +475,7 @@ p img {
     margin: 5px;
     font-weight: 700; /* Aumentando o peso da fonte */
     line-height: 21px;
-    background: rgb(254, 101, 79);
+    background: #000080;
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 10px;
