@@ -1,279 +1,789 @@
 :root{
-    --color-amarelo:#FFDD58;
+    --color-amarelo:rgb(255, 221, 88);
     --color-cinza:rgb(39,39,39);
     --color-cinza-enem:rgb(49,49,49);
     --color-branco:white;
     --color-font-roxo: #551a8b;
 }
-body * {
+body {
     font-family: 'Big Shoulders Display', cursiva;
     text-decoration: none;
     justify-content: space-evenly;
+    font-size: 1.6rem;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    background: var(--color-amarelo);
     
 }
 
-body{
-    display: flex;
-    background: var(--color-amarelo);
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-/* Cabeçalho*/
-header{
-    width:100%;
+  
+body, html {
+    margin: 0;
+    padding: 0;
     height: 100%;
+}
+
+
+header.cabecalho {
+    position: fixed; /* Garante que o cabeçalho permaneça fixo na parte superior da tela */
+    width: 100%;
+    height: 30px;
     background: var(--color-cinza);
     padding-bottom: 0.5rem;
     text-align: center;
-    padding-top: 20px;
-    box-shadow: 0 0.1rem 0.5rem #8f8e8e ;
-}
-
-#cenexao{
-    padding-top: 0.5em;
-    color: var(--color-amarelo);
-    font-weight: bold;
-    font-weight: 900;
-    font-size: 80px;
-    text-align: center;
-    
-    
-}
-#enem2{
-    color: var(--color-amarelo);
-    font-weight: bold;
-    font-weight: 900;
-    font-size: 125px;
-    text-align: center;
-    
-
-    
-}
-#texto3{
-    padding-top: 0.5em;
-    color: var(--color-font-roxo);
-    font-weight: bold;
-    font-weight: 900;
-    font-size: 30px;
-    text-align: center;
-      
-}
-#texto4{
-    padding: 15px 0;
-    color: var(--color-branco);
-    font-weight: bold;
-    font-weight: 900;
-    font-size: 20px;
-    text-align: center;    
-}
-/*main*/
-#volume{
-    color: var(--color-font-roxo);
-    font-weight:bold;
-    font-weight: 900;
-    font-size: 30px;
-    text-align: center;
-    padding: 10px 100px 30px 100px;
-    
-    
-}
-#quadrado-braco{
-   
-    height: 45%;
-    width: 500px;
-    display: grid;
-    background: var(--color-branco);
-    margin: 50px 420PX;
-    border-radius: 1em;
-    box-shadow: 0 0.1rem 0.2rem #8f8e8e ;
-    
-}
-#tabela1{
-    display:grid;
-    grid-template-columns: repeat(3, 2fr);
-    padding-bottom: 20px;
-    
-}
-li{
     padding-top: 10px;
+    box-shadow: 0 0.1rem 0.5rem #8f8e8e;
+    z-index: 1000; /* Valor alto para garantir que o cabeçalho esteja acima de outros elementos */
 }
-#tabela2{
-    background: var(--color-amarelo);
-    color: var(--color-font-roxo);
-    text-align: center;
-    margin: 10px 30px;
-    height: 25px;
-    width: 100px;
-    border-radius: 0.5em;
-    font-weight: bold;
-    font-weight: 900;
-    cursor: pointer; 
-    box-shadow: 0 0.1rem 0.2rem #8f8e8e ; 
-  
+.menu_aulas{
+    display: none;
 }
-#tabela1 :hover{
-    background: rgb(161, 109, 212);
-  
-    transition-duration: 300ms;
+#ARTES {
+    display: none;
 }
-footer{
-    background:var(--color-cinza-enem);
-    align-items: end;
-    height: 60px;
-    width: 100%;
-    text-align: center;
-    
+#artesano1 {
+    display: none;
 }
-/*volume1*/
-#volume1-titulo{
-    color: var(--color-font-roxo);
-    font-weight:bold;
-    font-weight: 900;
-    font-size: 36px;
-    text-align: center;
-    padding: 30px 0 20px 0 ;
-    text-shadow:  0.06rem 0.06rem #868484;  
-    
+#artesano2{
+    display: none;
 }
-#licao{
-    
-    width: 450px;
-    display: grid;
-    background: var(--color-branco);
-    margin: 50px 420PX;
-    border-radius: 1rem;
-    box-shadow: 0 0.1rem 0.5rem #8f8e8e ;
-}
-.titulo-da-caixa{
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    font-weight: 800;
-    padding: 10px;
-    text-transform: uppercase;
-    
-}
-h2.titulo-da-caixa{
-    margin-bottom: 30px;
-    
+#artesano3{
+    display: none;
 }
 
-#container_aula{
+#comp{
+    display: none;
+}
+#BIOLOGIA{
+    display: none;
+}
+
+#biologiano1 {
+    display: none;
+}
+#biologiano2{
+    display: none;
+}
+#biologiano3{
+    display: none;
+}
+.container_volume{
+    display: none;
+}
+
+#EDFISICA{
+    display: none;
+}
+#edFisicano1 {
+    display: none;
+}
+#edFisicano2 {
+    display: none;
+}
+#edFisicano3 {
+    display: none;
+}
+#ESPANHOL{
+    display: none;
+}
+
+#FILOSOFIA{
+    display: none;
+}
+#filoAno1 {
+    display: none;
+}
+#filoAno2 {
+    display: none;
+}
+#filoAno3 {
+    display: none;
+}
+
+
+#FISICA{
+    display: none;
+}
+#fisicaAno1 {
+    display: none;
+}
+#fisicaAno2 {
+    display: none;
+}
+#fisicaAno3 {
+    display: none;
+}
+#GEOGRAFIA{
+    display: none;
+}
+#geografiaAno1{
+    display: none;
+}
+#geografiaAno2{
+    display: none;
+}
+#geografiaAno3{
+    display: none;
+}
+
+#HISTORIA{
+    display: none;
+}
+#historiaAno1{
+    display: none;
+}
+#historiaAno2{
+    display: none;
+}
+#historiaAno3{
+    display: none;
+}
+#INGLES{
+    display: none;
+}
+#inglesAno1{
+    display: none;
+}
+#inglesAno2{
+    display: none;
+}
+#inglesAno3{
+    display: none;
+}
+#LITERATURA{
+    display: none;
+}
+#literaturaAno1{
+    display: none;
+}
+#literaturaAno2{
+    display: none;
+}
+#literaturaAno3{
+    display: none;
+}
+
+#MATEMATICA{
+    display: none;
+}
+#matematicaAno1{
+    display: none;
+}
+#matematicaAno2{
+    display: none;
+}
+#matematicaAno3{
+    display: none;
+}
+#PORTUGUES{
+    display: none;
+}
+#portuguesAno1{
+    display: none;
+}
+#portuguesAno2{
+    display: none;
+}
+#QUIMICA{
+    display: none;
+}
+#quimicaAno1{
+    display: none;
+}
+#quimicaAno2{
+    display: none;
+}
+#quimicaAno3{
+    display: none;
+}
+
+#REDACAO{
+    display: none;
+}
+#redacaoAno1{
+    display: none;
+}
+#redacaoAno2{
+    display: none;
+}
+#redacaoAno3{
+    display: none;
+}
+
+#SOCIOLOGIA{
+    display: none;
+}
+#sociologiaAno1{
+    display: none;
+}
+#sociologiaAno2{
+    display: none;
+}
+#sociologiaAno3{
+    display: none;
+}
+
+
+.container-principal {
+    margin-bottom: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    min-height: 120vh; /* Define a altura mínima como 100% da altura da viewport */
+    
+    
+}
+.descricao_tabela{
+    max-width: 600px;
+}
+section.container-propaganda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabela_menuPequeno{
+    background-color:white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container-propaganda{
+    display: grid;
+    justify-content: center;
+    z-index: 1;
+    text-align: center;
+    height: calc(100% - 200px);
+}
+nav.container-propaganda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conexao{
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--color-cinza-enem);
+    
+}
+.tituloaba1{
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--color-cinza-enem);
+   
+    margin-top: 5rem; 
+}
+p.img {
+    text-align: right;
+}
+p img {
+    float: right;
+    margin-right: 50px;
+}
+.tituloaba2{
     font-size: 20px;
     font-weight: 900;
-    border-radius: 0.5em;
-    display: flex;
-    padding: 5px;
-    margin-bottom: 10px;
-    box-shadow: 0 0.1rem 0.2rem #8f8e8e ;
-    cursor: pointer; 
+    text-transform: uppercase;
+    color: var(--color-cinza-enem);
+    margin-bottom: 2rem;
 }
+
+#btn-mobile16{
+    width: 100%;
+}
+
+.video-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--color-amarelo);
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  .video-button img {
+    margin-right: 10px;
+  }
+
+.voltar{
+    align-items: center;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row;
+    flex-grow: 1;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    transition: all .2s ease, visibility 0s;
+    width: 100%;
+}
+
+
+.enem{
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--color-cinza-enem);
+    margin-bottom: 30px; /* ajusta o valor conforme necessário */
+}
+
+/* Quando a página carrega ou o estado muda */
+.enem.show {
+    transform: translateX(0); /* Move para a posição original */
+    opacity: 1; /* Aparece gradualmente */
+}
+
+#imagem-menina{
+    width: 400px;
+    margin-left: 4rem;
+}
+.texto-conexao-enem {
+    position: absolute;
+    top: calc(50% + 10px); /* Adiciona 50px ao valor original de 50% */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0.1rem 0.5rem #8f8e8e;
+    transition: all 0.5s ease 0s;
+    opacity: 0.9;
+    
+}
+.container_volume{
+    position: relative;
+   
+   /* top: 98px;
+    /* grid-template-columns: repeat(2, 0fr); Ajuste o número de colunas conforme necessário */
+    width: auto;
+    background: white;
+    border-radius: 32px;
+    padding: 32px 0px;
+    box-shadow: 0 0.1rem 0.5rem #8f8e8e;
+    transition: all 0.5s ease 0s;
+    opacity: 0.9;
+    margin-top: 4rem;
+   /* z-index: -1;*/
+}
+.texto-conexao-enem2 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Ajuste o número de colunas conforme necessário */
+    gap: 20px;
+    width: 746px;
+   /* background: white; */
+    border-radius: 32px;
+    padding: 32px 0px;
+   /* box-shadow: 0 0.1rem 0.5rem #8f8e8e;*/
+    transition: all 0.5s ease 0s;
+    opacity: 0.9;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.texto2{
+    
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--color-font-roxo);
+    margin-bottom: 40px;
+}
+.texto4{
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--color-font-roxo);
+    
+}
+.botao{
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    padding: 0.1rem 5rem;
+    margin: 10px 45px 10px 45px;
+    font-weight: 500;
+    line-height: 21px;
+    background: rgb(254, 101, 79);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.1s ease 0s;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.container-propaganda .tabela1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Quatro disciplinas por linha */
+    gap: 1px;
+}
+.container-propaganda .tabela2 {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr); /* Quatro disciplinas por linha */
+    gap: 20px;
+}
+
+.container-propaganda .tabela3 {
+    display: grid;
+   
+    gap: 0px;
+}
+
+#voltar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    background-color: rgb(254, 101, 79);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#voltar:hover {
+    background-color: rgb(224, 81, 56);
+}
+
+#voltar:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    box-shadow: 0 0 0 3px rgba(254, 101, 79, 0.4); /* Adiciona uma borda de foco personalizada */
+}
+    
+.botao-aulas {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
+    padding: 5px;
+    margin: 5px;
+    font-weight: 700; /* Aumentando o peso da fonte */
+    line-height: 21px;
+    background: rgb(254, 101, 79);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease 0s;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 0.1rem 0.5rem #8f8e8e;
+    text-transform: uppercase;
+    cursor: pointer;   
+}
+
+#container_aula {
+    background: white;
+}
+
 #container_aula :hover{
     padding-right:  5.5px;
 }
+
 #palavra1{
     color: var(--color-font-roxo);
 }
 #palavra2{
     text-transform: uppercase;
-}
-#container_voltar{
-    background: #551a8b;
-    border-radius: 1EM;
-    text-align: center;
-    font-size: 50%;
-    margin: 10px 0 ;
-    box-shadow: 0 0.1rem 0.2rem #8f8e8e ;
-}
-#container_voltar :hover{
-    padding-right:  5.5px;
+    text-align: left;
+    margin-left: 20px;
+    flex-grow: 2;
+    
+    
 }
 
-#logo2{
-    padding: 10px;
+
+p.palavra2{
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 50px;
     
-           
 }
-#redes img{
-    width: 20px;
+
+
+p.tituloaba1{
+    margin-top: 80px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  /*  border-top: 3px solid var(--color-amarelo); /* Cor da linha e espessura 
+    width: 100%;  Largura da linha */
+}
+
+.botao-aulas:hover {
+    background-color: #551a8b; /* Cor de destaque quando o mouse passa por cima */
+    color: white; /* Cor do texto quando o mouse passa por cima */
+  }
+
+
+  #container_aula{
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    /*grid-template-columns: repeat(2, 1fr);*/
     padding: 5px;
-}
-
-#footer-licao{
-    padding-bottom: 50PX;
-    background: var(--color-cinza-enem);
-}
-
-@media  screen and (max-width:768px){
-html{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0.1rem 0.2rem #8f8e8e ;
+    cursor: pointer; 
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
     
-    width: 100%;
-    
-}
-#cenexao{
-
-    font-size: 60px;   
-}
-#enem2{
-    font-size: 100px;  
 }
 
 
-#texto3{
-
-    font-size:20px;
+#container_aula img {
+    align-items: end;
+    margin-right: 20px; /* Adiciona um espaço à direita da imagem */
 }
-}
-@media  screen and (max-width:480px){
 
-    html{
-    
-        width: 100%;
-        
-    }
-    #cenexao{
-    
-        font-size: 60px;   
-    }
-    #enem2{
-        font-size: 100px;  
-    }
-    
-    
-    #texto3{
-    
-        font-size:20px;
-    } 
-    #quadrado-braco{
+
+.titulo{
+    font-size: 26px;
+    font-weight: 900;
+    margin: 0px 0px 20px 0px;
+    background-color: #FFDD58;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0 0.1rem 0.5rem #8f8e8e ;
+}
+
+#menu{
+   display:none;
+   position: absolute;
+   width: 90%;
+   border-radius: 25px;
+   margin: 10px;
+   top: 0px;
+   right: -310px;
+   background: var(--color-branco);
+   box-shadow: 0 0.1rem 0.5rem #8f8e8e ;
+}
+
+#menu2{
+   display:none;
+   position: absolute;
+   width: 90%;
+   border-radius: 25px;
+   margin: 10px;
+   top: 0px;
+   right: -310px;
+   background: var(--color-branco);
+   box-shadow: 0 0.1rem 0.5rem #8f8e8e ; 
+ }
+
+ #menu3{
+   display:none;
+   position: absolute;
+   width: 90%;
+   border-radius: 25px;
+   margin: 10px;
+   top: 0px;
+   right: -310px;
+   background: var(--color-branco);
+   box-shadow: 0 0.1rem 0.5rem #8f8e8e ;
+ }
+
+  #imagem-menina-interna{
    
-        height: 45%;
+     /* Valor entre 0 (totalmente transparente) e 1 (totalmente opaca) */
+    /* Permite sobrepor outros elementos */
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    bottom: 20px; 
+    z-index: -1; /* Coloca a imagem no fundo, atrás do conteúdo */
+  }
+   .mobile{
+    display: none;
+   } 
+
+.containe_imagem{
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+}
+
+/* Adicione estas regras para tornar responsivo */
+/* Adicione estas regras para tornar responsivo */
+@media screen and (max-width: 1024px) {
+    .container-propaganda .tabela1 {
+        grid-template-columns: repeat(3, 1fr); /* Três disciplinas por linha em telas menores que 1024px */
+    }
+    .container-propaganda .descricao {
+        grid-template-columns: repeat(3, 1fr); /* Três disciplinas por linha em telas menores que 1024px */
+      
+    }
+}
+
+@media  screen and (max-width:1024px){
+     /* Ajustes de estilo para telas pequenas */
+     body {
+        font-size: 14px; /* Exemplo: reduzir o tamanho da fonte */
+       
+    }
+
+    main {
+        width: 100%; /* Exemplo: ajustar a largura do conteúdo */
+    }
+    header{
+        width: 135vh;
+        text-align: center;
+    
+    }
+    .container-principal{
+        width: 100%;
+    }
+
+    
+    .texto-conexao-enem{
         width: auto;
-        display: grid;
-        background: var(--color-branco);
-        margin: 50px 420PX;
-        border-radius: 1em;
-        box-shadow: 0 0.1rem 0.2rem #8f8e8e ;
+    }
+}
+
+@media  screen and (max-width:800px){
+    header{
+        width: 135vh;
+        text-align: center;
+    
+    }
+    body {
+        width: 100%; /* Exemplo: ajustar a largura do conteúdo */
+    }
+    .container-principal{
+        width: 100%;
+    }
+
+    .container-propaganda{
+        width: 100%;
+    }
+    
+    .texto-conexao-enem{
+        width: 500px;
+        margin-top: 70px;
+    }
+    .texto-conexao-enem2{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    /* Ajustes de estilo para telas pequenas */
+    body {
+        font-size: 14px; /* Exemplo: reduzir o tamanho da fonte */
+       
+    }
+
+    main {
+        width: 100%; /* Exemplo: ajustar a largura do conteúdo */
+    }
+    header.cabecalho {
+        height: auto; /* Ajusta a altura automaticamente para acomodar o conteúdo */
+        padding-top: 10px; /* Adapta o espaçamento superior */
+        padding-bottom: 10px; /* Adapta o espaçamento inferior */
+        width: 100%;
+    }
+    #menu,
+    #menu2,
+    #menu3 {
+        width: 90%; /* Faz com que o menu ocupe 100% da largura do contêiner pai */
+        right: 0; /* Alinha o menu à direita da tela */
+    }
+    .botao,
+    .botao-aulas {
+        padding: 0.5rem 2rem; /* Ajusta o preenchimento do botão */
+        margin: 10px 0; /* Ajusta a margem do botão */
+    }
+    .texto-conexao-enem {
+        width: auto;
+        margin-top: 200px;
         
     }
-    #tabela1{
-        display:grid;
-        grid-template-columns: repeat(2, 2fr);
-        padding-bottom: 20px;
+    .texto-conexao-enem2{
+        width: 400px;
+        align-items: center;
+
+    }
+    .texto-conexao-enem2.tituloaba1{
+       font-size: 26px;
+
+   }
+
+    .container-propaganda .tabela1 {
+        grid-template-columns: repeat(2, 1fr); /* Três disciplinas por linha em telas menores que 1024px */
+    }
+
+
+    .container-principal{
+        display: flex;
+        width: 100%; /* ou outro valor conforme necessário */
+        min-height: 100vh;
+    }
+    .container-propaganda{
+       width: 100%;
+       display: inline-table;
+    }
+    .tituloaba1{
+        font-size: 30px;
         
-    }   
-    /*Paginas VOLUMES*/
-#volume1-titulo{
-    width: auto;
-}
-h2.titulo-da-caixa{
-    width: 350px;
+    }
+
 }
 
-#container_aula{
-    display:flex;
+@media screen and (max-width: 410px) {
+    .texto-conexao-enem2{
+        width: 335px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .tituloaba1{
+        font-size: 25px;
+        
+    }
+    .texto-conexao-enem {
+       margin-top: 150px;
+    }
 }
+@media screen and (max-width: 360px) {
+
+    .texto-conexao-enem{
+        margin-top: 75px;
+        margin-top: 150px;
+    }
+    .texto-conexao-enem2{
+        width: 300px;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+ 
 }
-
-
-
+@media screen and (max-width: 320px) {
+    .texto-conexao-enem2{
+        width: 300px;
+        margin-top: 80px;
+    }
+    .texto-conexao-enem{
+        margin-top: 200px;
+    }
+ 
+}

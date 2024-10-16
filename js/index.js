@@ -7,15 +7,15 @@
 //biologiano1.style.display = "none";
 //valumes.style.display = "none";
 
-        window.onload = function(){
-            (function(d, script) {
-                script = d.createElement('script');
-                script.type = 'text/javascript';
-                script.async = true;
-                script.src = 'https://w.app/widget-v1/FyiWr0.js';
-                d.getElementsByTagName('head')[0].appendChild(script);
-            }(document));
-        };   
+    //   window.onload = function(){
+    //       (function(d, script) {
+    //           script = d.createElement('script');
+    //           script.type = 'text/javascript';
+    //           script.async = true;
+    //           script.src = 'https://w.app/widget-v1/FyiWr0.js';
+    //           d.getElementsByTagName('head')[0].appendChild(script);
+    //       }(document));
+    //   };   
   
         function searchMenu() {
             // Declarações

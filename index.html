@@ -11,20 +11,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aula Livre</title>
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style copy.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header class="cabecalho" id="cab">
     <a href=""><img src="./acess/logo_aulalivre.svg" alt=""></a>
+    <!-- <input type="text" id="searchInput" placeholder="Pesquisar..." onkeyup="searchMenu()" class="search-bar">-->
   </header>
   <main>
     <div class="container-principal" id="diciplinas">
       <section class="container-propaganda">
         <div class="texto-conexao-enem" id="menuprincipal">
-          <p class="conexao">Praticando</p>
-          <p class="enem">Encceja</p>   
-          <nav class="tabela1"> <!-- Menus -->
+          <p class="conexao">conexão</p>
+          <p class="enem">Encceja</p>
+          <nav class="tabela1">
             <button id="btn-mobile" class="botao-aulas" onclick="clickMenu1()" href="">ARTES</button>
             <button id="btn-mobile2" class="botao-aulas" onclick="clickMenu2()" href="">BIOLOGIA</button>
             <button id="btn-mobile3" class="botao-aulas" onclick="clickMenu3()" href="">ED.FISICA</button>
@@ -41,64 +42,663 @@
             <button id="btn-mobile14" class="botao-aulas" onclick="clickMenu14()" href="">REDAÇÃO</button>
             <button id="btn-mobile15" class="botao-aulas" onclick="clickMenu15()" href="">SOCIOLOGIA</button>
           </nav>
+
         </div>
         <!-- Menu de Artes -->
         <div class="texto-conexao-enem2" id="ARTES">
           <nav class="container-propaganda">
             <div class="tabela_menuPequeno" id="aulasartes">
+              <!--
+            <button id="btn-mobile15" class="botao-aulas" onclick="artesvolume1()" href="">ARTES - VOLUME 1</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="artesvolume2()" href="">ARTES - VOLUME 2</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="artesvolume3()" href="">ARTES - VOLUME 3</button>
+-->
             </div>
-            <div class="descricao_tabela" id="artesano1">  <!--Volume 1-->
-              <p class="tituloaba1" id="arteantigav1">AULAS DA LIÇÃO - HISTÓRIA DA ARTE ANTIGA</p>
+            <div class="descricao_tabela" id="artesano1"> <!--Volume 1-->
+              <p class="tituloaba1" id="arte_medieval">AULAS DA LIÇÃO - Da Pré-História à Arte Medieval</p>
               <nav class="tabela3">
                 <div id="container_aula">
-                  <h1 id="palavra2">Arte e Cultura Brasileira I</h1>
-                  <a href="https://plataforma.aulalivre.net/disciplina/artes/02---arte-moderna/arte-e-cultura-brasileira-i">
-                    <p><img src="acess/videos-solid-24.png" alt="Link para aula de Idade Média"></p>
-                  </a>
-                </div>               
-              <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
+                  <p id="palavra2">Pré-História e Antiguidade</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/artes/01---historia-da-arte/pre-historia-e-antiguidade">
+                      <img src="acess/videos-solid-24.png" alt=""></p></a>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Idade Média</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/artes/01---historia-da-arte/idade-media">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Pré-História e Antiguidade</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/artes/01---historia-da-arte/pre-historia-e-antiguidade">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+              </nav>
+              <!--Volume 2-->
+              <p class="tituloaba1" id="renascimento_romantismo">AULAS DA LIÇÃO - Do Renascimento ao Romantismo</p>
+              <nav class="tabela3">
+                <div id="container_aula">
+                  <p id="palavra2">Renascimento e Barroco</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/artes/01---historia-da-arte/renascimento-e-barroco">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Neoclassicismo, Romantismo e Realismo</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/artes/01---historia-da-arte/neoclassicismo-romantismo-e-realismo">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+              </nav>
+              <!--Volume 3-->
+              <p class="tituloaba1" id="arte_moderna">AULAS DA LIÇÃO - História da Arte Moderna</p>
+              <nav class="tabela3">
+                <div id="container_aula">
+                  <p id="palavra2">Modernismo I</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/artes/02---arte-moderna/artes-modernismo-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Neoclassicismo, Romantismo e Realismo</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/artes/01---historia-da-arte/neoclassicismo-romantismo-e-realismo">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Pré-modernismo I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/literatura/05---pre-modernismo/pre-modernismo-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Modernismo II</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/artes/02---arte-moderna/artes-modernismo-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+              </nav>
+
+              <!--Volume 4-->
+              <p class="tituloaba1" id="arte_contemporanea">AULAS DA LIÇÃO - História da Arte Contemporânea</p>
+              <nav class="tabela3">
+                <div id="container_aula">
+                  <p id="palavra2">Tendências Artísticas Contemporâneas</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/artes/02---arte-moderna/artes-modernismo-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+              </nav>
+
+              <!--Volume 5-->
+              <p class="tituloaba1" id="cultura_artistica">AULAS DA LIÇÃO - Técnica e Cultura Artística</p>
+              <nav class="tabela3">
+                <div id="container_aula">
+                  <p id="palavra2">ARTE E CULTURA BRASILEIRA I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/artes/02---arte-moderna/arte-e-cultura-brasileira-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">ARTE E CULTURA BRASILEIRA II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/artes/02---arte-moderna/arte-e-cultura-brasileira-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
               </nav>
             </div>
-          </nav>
+
         </div>
+
         <!-- Menu de BIOLOGIA -->
         <div class="texto-conexao-enem2" id="BIOLOGIA">
           <nav class="container-propaganda">
             <div class="tabela_menuPequeno" id="aulasbiologia">
+              <!--
+            <button id="btn-mobile15" class="botao-aulas" onclick="biologiaAno1()" href="">BIOLOGIA - VOLUME
+              1</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="biologiaAno2()" href="">BIOLOGIA - VOLUME
+              2</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="biologiaAno3()" href="">BIOLOGIA - VOLUME
+              3</button>
+-->
             </div>
             <!--Biologia Volume 1-->
             <div class="descricao_tabela" id="biologiano1">
-              <p class="tituloaba1" id="origem_da_vida">AULAS DA LIÇÃO - ORIGEM DA VIDA</p>
+              <p class="tituloaba1" id="procariontes_eucariontes">AULAS DA LIÇÃO - Células Procariontes e Eucariontes
+              </p>
               <nav class="tabela3">
+
                 <div id="container_aula">
-                  <h1 id="palavra2">Teorias da origem da vida</h1>
-                  <a
-                    href="https://plataforma.aulalivre.net/disciplina/biologia/01---origem-da-vida-e-evolucao/origem-da-vida">
-                    <p><img src="acess/videos-solid-24.png" alt="Assista o Video"></p>
-                  </a>
-                </div>                
-              <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
+                  <p id="palavra2">Conceitos</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/03---citologia/definicao">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 2-->
+                <p class="tituloaba1" id="citologia_1">AULAS DA LIÇÃO - Estruturas Celulares</p>
+                <div id="container_aula">
+                  <p id="palavra2">Citoplasma I: Organelas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/03---citologia/citologia-citoplasma-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Citoplasma II: Citoesqueleto</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/03---citologia/citoplasma-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Citoplasma I: Organelas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/03---citologia/citologia-citoplasma-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Citoplasma IV: Mobilidade celular e Fermentação</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/03---citologia/citologia-citoplasma-iv">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 3-->
+                <p class="tituloaba1" id="bioquimica_celular">AULAS DA LIÇÃO - Bioquímica Celular</p>
+                <div id="container_aula">
+                  <p id="palavra2">Síntese de proteínas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/03---citologia/citologia-sintese-de-proteinas">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Vitaminas, água e sais minerais</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/02---bioquimica/vitaminasbiomoleculasinorganicas">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Proteínas - Biomoléculas orgânicas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/02---bioquimica/biomoleculasorganicas">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Carboidratos e lipídeos</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/02---bioquimica/carboidratosegorduras">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 4-->
+                <p class="tituloaba1" id="nucleo">AULAS DA LIÇÃO - Núcleo</p>
+                <div id="container_aula">
+                  <p id="palavra2">Núcleo</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/03---citologia/citologia-nucleo">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Composição da Membrana Plasmática</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/03---citologia/citologia-membrana-plasmatica">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Núcleo</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/03---citologia/citologia-nucleo">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Divisão celular: Mitose e Meiose</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/03---citologia/citologia-divisao-celular">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 5
+              <p class="tituloaba1" id="reproducao_embriologia_v1">AULAS DA LIÇÃO - REPRODUÇÃO E EMBRIOLOGIA</p>
+              -->
+
+                <!--Volume 6-->
+                <p class="tituloaba1" id="virus_e_viroses">AULAS DA LIÇÃO - Vírus e Viroses</p>
+                <div id="container_aula">
+                  <p id="palavra2">Bactérias</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/04---microbiologia/seres-vivos-inferiores-i-bacterias">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Vírus</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/04---microbiologia/seres-vivos-inferiores-iv-virus">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Viroses</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/04---microbiologia/viroses">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 7-->
+                <p class="tituloaba1" id="reinos_monera_protista">AULAS DA LIÇÃO - Reinos Monera e Protista</p>
+                <div id="container_aula">
+                  <p id="palavra2">Bactérias</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/04---microbiologia/seres-vivos-inferiores-i-bacterias">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Bactérias</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/04---microbiologia/seres-vivos-inferiores-i-bacterias">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Algas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/04---microbiologia/seres-vivos-inferiores-v-virus">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Protozoários</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/04---microbiologia/seres-vivos-inferiores-iii-protozoarios">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Protozooses</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/04---microbiologia/protozooses">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Protozooses</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/04---microbiologia/protozooses">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 8-->
+                <p class="tituloaba1" id="zoologia_dos_invertebrados">AULAS DA LIÇÃO - Zoologia dos Invertebrados I</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Poríferos e cnidários</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/05---zoologia-i---invertebrados/zoologia-i-introducao-a-zoologia-poriferos-e-cnidarios">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Platelmintos e nematelmintos</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/05---zoologia-i---invertebrados/zoologia-ii-platelmintos-e-nematelmintos">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Platelmintos: Verminoses</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/05---zoologia-i---invertebrados/verminoses">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Nematelmintos: Parasitoses</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/05---zoologia-i---invertebrados/asquelmintos">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 9-->
+                <p class="tituloaba1" id="zoologia_dos_invertebrados_ii">AULAS DA LIÇÃO - Zoologia dos Invertebrados II
+                </p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Anelídeos</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/05---zoologia-i---invertebrados/zoologiaiv-anelideos">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Artrópodos</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/05---zoologia-i---invertebrados/zoologia-v-artropodos">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Moluscos e equinodermas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/05---zoologia-i---invertebrados/zoologia-iv-moluscos-e-equinodermas">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 10-->
+                <p class="tituloaba1" id="vertebrados">AULAS DA LIÇÃO - Vertebrados</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Peixes</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/06---zoologia-ii---vertebrados/peixes">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Anfíbios</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/06---zoologia-ii---vertebrados/anfibios">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Répteis</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/06---zoologia-ii---vertebrados/repteis">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Aves</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/06---zoologia-ii---vertebrados/aves">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Mamíferos</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/06---zoologia-ii---vertebrados/mamiferos">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 11 -->
+
+                <!--Volume 12-->
+                <p class="tituloaba1" id="anatomia_humana_digestao">AULAS DA LIÇÃO - Anatomia Humana - Digestão</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Sistema digestório</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/07---fisiologia-animal/sistema-digestorio">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 13-->
+                <p class="tituloaba1" id="sistemas_circulatorio_respiratorio">AULAS DA LIÇÃO - Sistemas Circulatório e
+                  Respiratório</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Sistema circulatório</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/07---fisiologia-animal/sistema-circulatorio">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Sistema respiratório</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/07---fisiologia-animal/sistema-respiratorio">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 14-->
+                <p class="tituloaba1" id="sistemas_urinario_nervoso">AULAS DA LIÇÃO - Sistemas Urinário e Nervoso</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Sistema excretório</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/07---fisiologia-animal/sistema-excretorio">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Sistema nervoso</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/07---fisiologia-animal/sistema-nervoso">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 15-->
+                <p class="tituloaba1" id="sistema_endocrino">AULAS DA LIÇÃO - Sistema Endócrino</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Sistema endócrino</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/07---fisiologia-animal/sistema-endocrino">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 16-->
+                <p class="tituloaba1" id="reino_vegetal">AULAS DA LIÇÃO - Reino Vegetal</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Botânica Básica</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/10---botanica/botanicabasica-reprise-aovivo-2017">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Classificação dos órgãos vegetais</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/10---botanica/classificacao-dos-orgaos-vegetais">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Pteridófitas</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/10---botanica/pteridofitas-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Gimnosperma</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/10---botanica/gimnosperma">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Angiosperma I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/10---botanica/sistematica-vegetal-iiii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Angiosperma II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/10---botanica/sistematica-vegetal-iii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 17-->
+                <p class="tituloaba1" id="ecologia_nomenclatura">AULAS DA LIÇÃO - Ecologia - Nomenclatura</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Introdução e conceitos</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/12---ecologia/ecologia-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Cadeia alimentar</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/12---ecologia/ecologia-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Cadeia Alimentar dos ecossistemas terrestres e aquáticos</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/12---ecologia/cadeialimentar-reprise-aovivo-2017">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 18-->
+                <p class="tituloaba1" id="fluxo_de_energia_no_ecossistema">AULAS DA LIÇÃO - Fluxo de Energia no
+                  Ecossistema</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Cadeia alimentar</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/12---ecologia/ecologia-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Cadeia Alimentar dos ecossistemas terrestres e aquáticos</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/12---ecologia/cadeialimentar-reprise-aovivo-2017">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 19-->
+                <p class="tituloaba1" id="ciclos_biogeoquimicos">AULAS DA LIÇÃO - Ciclos Biogeoquímicos</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Ciclos biogeoquímicos</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/biologia/12---ecologia/ciclobiogeoquimico-reprise-aovivo-2018">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Ciclos biogeoquímicos (ciclo do C e N)</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/12---ecologia/ecologia-vii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 20-->
+                <p class="tituloaba1" id="desequilibrios_ambientais_i">AULAS DA LIÇÃO - Desequilíbrios Ambientais I</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Impacto ambiental e poluição I</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/12---ecologia/ecologia-viii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Impacto ambiental e poluição II</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/12---ecologia/ecologia-ix">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 21-->
+                <p class="tituloaba1" id="desequilibrios_ambientais_ii">AULAS DA LIÇÃO - Desequilíbrios Ambientais II
+                </p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Impacto ambiental e poluição I</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/12---ecologia/ecologia-viii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Impacto ambiental e poluição II</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/12---ecologia/ecologia-ix">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 22-->
+                <p class="tituloaba1" id="relacoes_ecologicas_i">AULAS DA LIÇÃO - Relações Ecológicas I</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Relações ecológicas I</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/12---ecologia/ecologia-iii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Relações ecológicas II</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/12---ecologia/ecologia-iv">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 23-->
+                <p class="tituloaba1" id="relacoes_ecologicas_ii">AULAS DA LIÇÃO - Relações Ecológicas II</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Relações ecológicas I</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/biologia/12---ecologia/ecologia-iii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
+
               </nav>
             </div>
           </nav>
-        </div> 
+        </div>
         <!-- Menu de Educação fisica -->
         <div class="texto-conexao-enem2" id="EDFISICA">
           <nav class="container-propaganda">
             <div class="tabela_menuPequeno" id="aulasedfisica">
+              <!--
+            <button id="btn-mobile15" class="botao-aulas" onclick="edFisicaAno1()" href="">ED.FISICA - VOLUME
+              1</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="edFisicaAno2()" href="">ED.FISICA - VOLUME
+              2</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="edFisicaAno3()" href="">ED.FISICA - VOLUME
+              3</button>
+-->
+
             </div>
             <!--Ed Fisica Volume 1-->
             <div class="descricao_tabela" id="edFisicano1">
-              <p class="tituloaba1" id="BIOMECANICA_E_SAUDE_V1">AULAS DA LIÇÃO - ATIVIDADE FÍSICA E SEU IMPACTO: ESPORTES, BIOMECÂNICA E SAÚDE I
-              </p>
+              <!-- <p class="tituloaba1" id="BIOMECANICA_E_SAUDE_V1">AULAS DA LIÇÃO - ATIVIDADE FÍSICA E SEU IMPACTO: ESPORTES, BIOMECÂNICA E SAÚDE I</p>-->
               <nav class="tabela3">
+
+                <!--Volume 1-->
+                <p class="tituloaba1" id="atividade_fisica">AULAS DA LIÇÃO - Atividade Física e seu impacto</p>
+
                 <div id="container_aula">
-                  <h1 id="palavra2">Questão 22 | Estilo de vida na saúde | Enem 2018</h1>
-                  <a
-                    href="https://plataforma.aulalivre.net/disciplina/questoes-enem/enem-2018-linguagens-codigos-e-suas-tecnologias-caderno-amarelo/questao22-enem2018">
-                    <p><img src="acess/videos-solid-24.png" alt="Assista o Video"></p>
-                  </a>
+                  <p id="palavra2">Revisão Enem 2023 | Educação Física</p>
+                  <p><a href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo-revisao-enem-edf-23">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
                 </div>
+
+                <!--Volume 2-->
+                <p class="tituloaba1" id="manifestacao_cultural">AULAS DA LIÇÃO - Manifestação Cultural</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Revisão Enem 2023 | Educação Física</p>
+                  <p><a href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo-revisao-enem-edf-23">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 3-->
+                <p class="tituloaba1" id="jogos_eletronicos">AULAS DA LIÇÃO - Jogos Eletrônicos - Tecnologia e
+                  Ludicidade</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">AO VIVO | EDUCAÇÃO FÍSICA NO ENEM</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo-educacao-fisica-no-enem-edu-23">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 4-->
+                <p class="tituloaba1" id="manifestacao_cultural_inclusao">AULAS DA LIÇÃO - Manifestação Cultural e
+                  Inclusão</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">AO VIVO | EDUCAÇÃO FÍSICA NO ENEM</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo-educacao-fisica-no-enem-edu-23">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+
                 <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
               </nav>
             </div>
@@ -108,20 +708,151 @@
         <div class="texto-conexao-enem2 menu_aulas" id="ESPANHOL">
           <nav class="container-propaganda">
             <div class="tabela_menuPequeno" id="aulasespanhol">
+              <!--
+            <button id="btn-mobile15" class="botao-aulas" onclick="espanholAno1()" href="">ESPANHOL - VOLUME
+              1</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="espanholAno2()" href="">ESPANHOL - VOLUME
+              2</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="espanholAno3()" href="">ESPANHOL - VOLUME
+              3</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="espanholAno4()" href="">ESPANHOL - VOLUME
+              4</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="espanholAno5()" href="">ESPANHOL - VOLUME
+              5</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="espanholAno6()" href="">ESPANHOL - VOLUME
+              6</button>
+-->
             </div>
             <!--Espanhol Volume 1-->
             <div class="descricao_tabela menu_aulas" id="espanhol_ano1">
-              <p class="tituloaba1" id="texto_para_interpretar_v1">AULAS DA LIÇÃO - INTERPRETAÇÃO TEXTUAL</p>
+              <!--  <p class="tituloaba1" id="texto_para_interpretar_v1">AULAS DA LIÇÃO - INTERPRETAÇÃO TEXTUAL</p> -->
               <nav class="tabela3">
+                <!--Volume 1-->
+                <p class="tituloaba1" id="interpretacao_textual_espalhol">AULAS DA LIÇÃO - Interpretação textual</p>
+
                 <div id="container_aula">
-                  <h1 id="palavra2">Interpretação de texto</h1>
-                  <a
-                    href="https://plataforma.aulalivre.net/disciplina/espanhol/06---interpretacao-de-texto/interpretacao-de-texto">
-                    <p><img src="acess/videos-solid-24.png" alt="Assista o Video"></p>
-                  </a>
+                  <p id="palavra2">Interpretación de texto I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/espanhol/06---interpretacao-de-texto/interpretacao-de-texto">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Interpretación de texto II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/espanhol/06---interpretacao-de-texto/interpretacao-de-texto-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 2-->
+                <p class="tituloaba1" id="interpretacao_textual_argumentacao">AULAS DA LIÇÃO - Interpretação textual:
+                  Argumentação</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Interpretación de texto III</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/espanhol/06---interpretacao-de-texto/interpretacao-de-texto-iii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 3-->
+                <p class="tituloaba1" id="interpretacao_textual_informativo">AULAS DA LIÇÃO - Interpretação textual:
+                  Informativo</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Variação linguística do espanhol</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo-variacao-linguistica-esp-23">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 4-->
+                <p class="tituloaba1" id="interpretacao_textual_poema">AULAS DA LIÇÃO - Interpretação textual: Poema (Eu
+                  Lírico)</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Revisão ENEM: Espanhol</p>
+                  <p><a href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aovivo-revisa-enem-espanhol-2021">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 5-->
+                <p class="tituloaba1" id="interpretacao_textual_descricao">AULAS DA LIÇÃO - Interpretação textual:
+                  Descrição</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Artículos</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/espanhol/01---morfologia-i/articulos">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 6-->
+                <p class="tituloaba1" id="interpretacao_textual">AULAS DA LIÇÃO - Interpretação textual: Textos LEM</p>
+                <div id="container_aula">
+                  <p id="palavra2">Espanhol | Revisão Enem 2022</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/ao-vivo-revisao-enem-2022-espanhol">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 7-->
+                <p class="tituloaba1" id="anuncios_publicitarios">AULAS DA LIÇÃO - Interpretação textual: Anúncios
+                  Publicitários</p>
+                <div id="container_aula">
+                  <p id="palavra2">Espanhol | Revisão Enem 2022</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/ao-vivo-revisao-enem-2022-espanhol">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 8-->
+                <p class="tituloaba1" id="charge">AULAS DA LIÇÃO - Interpretação textual: Charge</p>
+                <div id="container_aula">
+                  <p id="palavra2">Espanhol | Revisão Enem 2022</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/ao-vivo-revisao-enem-2022-espanhol">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 9-->
+                <p class="tituloaba1" id="expressoes_idiomaticas">AULAS DA LIÇÃO - Expressões Idiomáticas</p>
+                <div id="container_aula">
+                  <p id="palavra2">Espanhol | Revisão Enem 2022</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/ao-vivo-revisao-enem-2022-espanhol">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 10-->
+                <p class="tituloaba1" id="vocabulario_espanhol">AULAS DA LIÇÃO - Vocabulário</p>
+                <div id="container_aula">
+                  <p id="palavra2">Los alimentos</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/espanhol/05---vocabulario/vocabularios-alimentos">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Palabras importantes</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/espanhol/05---vocabulario/palavras-importantes">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">La ciudad</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/espanhol/05---vocabulario/vocabulario-a-cidade">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">El vestuario</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/espanhol/05---vocabulario/vocabulario-especifico-vestuario">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
                 </div>
                 <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
-              </nav>             
+              </nav>
             </div>
           </nav>
         </div>
@@ -129,38 +860,257 @@
         <div class="texto-conexao-enem2" id="FILOSOFIA">
           <nav class="container-propaganda">
             <div class="tabela_menuPequeno" id="aulasfilosofia">
-        </div>
+              <!--
+            <button id="btn-mobile15" class="botao-aulas" onclick="filosofiaAno1()" href="">FILOSOFIA - VOLUME
+              1</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="filosofiaAno2()" href="">FILOSOFIA - VOLUME
+              2</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="filosofiaAno3()" href="">FILOSOFIA - VOLUME
+              3</button>
+-->
+            </div>
             <!-- Menu de FILOSOFIA Volume 1 -->
             <div class="descricao_tabela" id="filoAno1">
-              <p class="tituloaba1" id="Conceitos_FilosóficosV1">AULAS DA LIÇÃO - Conceitos Filosóficos</p>
+              <!-- <p class="tituloaba1" id="Conceitos_FilosóficosV1">AULAS DA LIÇÃO - Conceitos Filosóficos</p>-->
               <nav class="tabela3">
+                <!--Volume 1-->
+                <p class="tituloaba1" id="conceitos_filosoficos">AULAS DA LIÇÃO - Conceitos Filosóficos</p>
                 <div id="container_aula">
-                  <h1 id="palavra2">Questão 52 | Conceito de conhecimento | Enem 2020</h1>
-                  <a
-                    href="https://plataforma.aulalivre.net/disciplina/questoes-enem/enem-2020-ciencias-humanas-e-suas-tecnologias-caderno-amarelo/enem-2020-humanas-52">
-                    <p><img src="acess/videos-solid-24.png" alt="Assistente de vídeo"></p>
-                  </a>
+                  <p id="palavra2">Período Pré-socrático e filosofia clássica</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/filosofia/01---historia-da-filosofia/presocratico-reprise-aovivo-2017">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
                 </div>
+
+                <!--Volume 2-->
+                <p class="tituloaba1" id="presocraticos">AULAS DA LIÇÃO - Pré-socráticos</p>
+                <div id="container_aula">
+                  <p id="palavra2">Período Pré-socrático e filosofia clássica</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/filosofia/01---historia-da-filosofia/presocratico-reprise-aovivo-2017">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 3-->
+                <p class="tituloaba1" id="socraticos">AULAS DA LIÇÃO - Socráticos</p>
+                <div id="container_aula">
+                  <p id="palavra2">Período Pré-socrático e filosofia clássica</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/filosofia/01---historia-da-filosofia/presocratico-reprise-aovivo-2017">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 4-->
+                <p class="tituloaba1" id="filosofia_classica">AULAS DA LIÇÃO - Filosofia Clássica</p>
+                <div id="container_aula">
+                  <p id="palavra2">Período Pré-socrático e filosofia clássica</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/filosofia/01---historia-da-filosofia/presocratico-reprise-aovivo-2017">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 5-->
+                <p class="tituloaba1" id="filosofia_medieval">AULAS DA LIÇÃO - Filosofia Medieval</p>
+                <div id="container_aula">
+                  <p id="palavra2">Escolástica e Patrística</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo-escolastica-patristica-2021">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 6-->
+                <p class="tituloaba1" id="filosofia_moderna">AULAS DA LIÇÃO - Filosofia Moderna</p>
+                <div id="container_aula">
+                  <p id="palavra2">A Política no Pensamento Ocidental II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/filosofia/03---temas-tranversais/a-politica-no-pensamentos-ocidental-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 7-->
+
+                <!--Volume 8-->
+                <p class="tituloaba1" id="politica">AULAS DA LIÇÃO - Política</p>
+                <div id="container_aula">
+                  <p id="palavra2">A Política: Definições</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/filosofia/03---temas-tranversais/politica-definicoes">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 9-->
+                <p class="tituloaba1" id="etica">AULAS DA LIÇÃO - Ética</p>
+                <div id="container_aula">
+                  <p id="palavra2">A Ética</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/filosofia/03---temas-tranversais/etica">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 10-->
+                <p class="tituloaba1" id="escola_frankfurt">AULAS DA LIÇÃO - Escola de Frankfurt</p>
+                <div id="container_aula">
+                  <p id="palavra2">Escola de Frankfurt</p>
+                  <p><a href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aovivo-frankfurt-2020">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
                 <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
               </nav>
             </div>
+
           </nav>
         </div>
         <!-- Menu de FISICA -->
         <div class="texto-conexao-enem2" id="FISICA">
           <nav class="container-propaganda">
             <div class="tabela_menuPequeno" id="aulasfisica">
+              <!--
+            <button id="btn-mobile15" class="botao-aulas" onclick="fisiAno1()" href="">FÍSICA - VOLUME 1</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="fisiAno2()" href="">FÍSICA - VOLUME 2</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="fisiAno3()" href="">FÍSICA - VOLUME 3</button>
+            -->
             </div>
             <!-- Menu de FISICA Volume 1 -->
             <div class="descricao_tabela" id="fisicaAno1">
-              <p class="tituloaba1" id="MRU_E_MRUV_V1">AULAS DA LIÇÃO - MRU E MRUV</p>
+              <!--  <p class="tituloaba1" id="MRU_E_MRUV_V1">AULAS DA LIÇÃO - MRU E MRUV</p>-->
               <nav class="tabela3">
+                <!--Volume 1-->
+                <p class="tituloaba1" id="cinematica_i">AULAS DA LIÇÃO - Cinemática I</p>
                 <div id="container_aula">
-                  <h1 id="palavra2">MRU e MRUV</h1>
-                  <a href="https://plataforma.aulalivre.net/disciplina/fisica/02---cinematica/aula-mru-mruv-fis">
-                    <p><img src="acess/videos-solid-24.png" alt="Assistente de vídeo"></p>
-                  </a>
+                  <p id="palavra2">MRU e MRUV</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/fisica/02---cinematica/aula-mru-mruv-fis">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
                 </div>
+
+                <!--Volume 2-->
+                <p class="tituloaba1" id="metodo_cientifico_e_fisica_classica">AULAS DA LIÇÃO - O Método Científico e a
+                  Física Clássica</p>
+                <div id="container_aula">
+                  <p id="palavra2">Introdução à Física</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/fisica/01---as-ferramentas-da-fisica/introducao-a-fisica">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 5-->
+                <p class="tituloaba1" id="dinamica_ii_grandezas_fisicas">AULAS DA LIÇÃO - Dinâmica II - Grandezas
+                  Físicas</p>
+                <div id="container_aula">
+                  <p id="palavra2">Princípios da Dinâmica: de Aristóteles a Galileu</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/fisica/03---dinamica/dinamica-principios">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 6-->
+                <p class="tituloaba1" id="dinamica_iii">AULAS DA LIÇÃO - Dinâmica III - As Leis de Newton</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Inércia e primeira Lei de Newton</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/fisica/03---dinamica/dinamica-inercia">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Segunda Lei de Newton</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/fisica/03---dinamica/dinamica-segundalei">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Terceira Lei de Newton</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/fisica/03---dinamica/dinamica-terceiralei">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 7-->
+                <p class="tituloaba1" id="dinamica_iv">AULAS DA LIÇÃO - Dinâmica IV - Atração Gravitacional</p>
+                <div id="container_aula">
+                  <p id="palavra2">Gravitação Contextualizada</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/fisica/06---gravitacao/gravitacao-contextualizada">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 8-->
+                <p class="tituloaba1" id="dinamica_v">AULAS DA LIÇÃO - Dinâmica V - Energia, Trabalho e Potência</p>
+                <div id="container_aula">
+                  <p id="palavra2">Tipos de Energia</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/fisica/05---energia-mecanica/tiposdeenergia-aovivo-2018">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Trabalho e Energia Cinética</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/fisica/05---energia-mecanica/teorema-trabalho-energia-cinetica">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Trabalho e potência</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/fisica/05---energia-mecanica/trabalho-e-potencia">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 9-->
+                <p class="tituloaba1" id="hidrostatica">AULAS DA LIÇÃO - Hidrostática</p>
+                <div id="container_aula">
+                  <p id="palavra2">Hidrostática I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/fisica/07---hidrostatica/aula-fisica-hidrostatica-i-2021">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 10-->
+                <p class="tituloaba1" id="estatica">AULAS DA LIÇÃO - Estática</p>
+                <div id="container_aula">
+                  <p id="palavra2">Torque e equilíbrio</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/fisica/04---estatica/estatica">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 11-->
+                <p class="tituloaba1" id="ondas">AULAS DA LIÇÃO - Ondas</p>
+                <div id="container_aula">
+                  <p id="palavra2">Ondulatória</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/fisica/08---ondulatoria/aula-ao-vivo-2019-ondulatoria">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 12-->
+                <p class="tituloaba1" id="luz">AULAS DA LIÇÃO - Luz</p>
+                <div id="container_aula">
+                  <p id="palavra2">Espelhos e Lentes</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/fisica/09---optica/aula-ao-vivo-Espelhos-e-lentes">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Revisão Calorimetria</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/fisica/10---dilatacao-termica-e-calorimetria/calorimetria-aovivo-2018">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 14-->
+                <p class="tituloaba1" id="magnetismo">AULAS DA LIÇÃO - Magnetismo</p>
+                <div id="container_aula">
+                  <p id="palavra2">Magnetismo</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/fisica/14---eletromagnetismo/fisica-14-magnetismo">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 15-->
+                <p class="tituloaba1" id="eletricidade">AULAS DA LIÇÃO - Eletricidade</p>
+                <div id="container_aula">
+                  <p id="palavra2">Eletroestática</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/fisica/12---eletrostatica/aula-ao-vivo-eletroestatica-trilha">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
                 <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
               </nav>
             </div>
@@ -170,40 +1120,681 @@
         <div class="texto-conexao-enem2" id="GEOGRAFIA">
           <nav class="container-propaganda">
             <div class="tabela_menuPequeno" id="aulasgeografia">
+              <!--
+            <button id="btn-mobile15" class="botao-aulas" onclick="geoAno1()" href="">GEOGRAFIA - VOLUME 1</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="geoAno2()" href="">GEOGRAFIA - VOLUME 2</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="geoAno3()" href="">GEOGRAFIA - VOLUME 3</button>
+-->
             </div>
             <!-- Menu de GEOGRAFIA Volume 1 -->
             <div class="descricao_tabela" id="geografiaAno1">
-              <p class="tituloaba1" id="CARTOGRAFIA_V1">AULAS DA LIÇÃO - CARTOGRAFIA</p>
+              <!--  <p class="tituloaba1" id="CARTOGRAFIA_V1">AULAS DA LIÇÃO - CARTOGRAFIA</p> -->
               <nav class="tabela3">
+
+                <!--Volume 1-->
+                <p class="tituloaba1" id="cartografia">AULAS DA LIÇÃO - Cartografia I</p>
                 <div id="container_aula">
-                  <h1 id="palavra2">Apresentação dos Conteúdos | Geocartografia</h1>
-                  <a
-                    href="https://plataforma.aulalivre.net/disciplina/geografia/01---geocartografia/apresentacao-dos-conteudos">
-                    <p><img src="acess/videos-solid-24.png" alt="Assistente de vídeo"></p>
-                  </a>
+                  <p id="palavra2">Apresentação dos Conteúdos</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/01---geocartografia/apresentacao-dos-conteudos">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Coordenadas Geográficas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/01---geocartografia/coordenadas-geograficas">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 2-->
+                <p class="tituloaba1" id="cartografia_ii_escala_projecoes">AULAS DA LIÇÃO - Cartografia II - Escala e
+                  Projeções</p>
+                <div id="container_aula">
+                  <p id="palavra2">Escala</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/geografia/01---geocartografia/escala">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Projeções Cartográficas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/01---geocartografia/projecoes-cartograficas">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 3-->
+
+                <!--Volume 4-->
+                <p class="tituloaba1" id="guerra_fria">AULAS DA LIÇÃO - Guerra Fria</p>
+                <div id="container_aula">
+                  <p id="palavra2">Guerra Fria</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/geografia/10---globalizacao/guerra-fria">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 5-->
+                <p class="tituloaba1" id="mundo_contemporaneo">AULAS DA LIÇÃO - O Mundo Contemporâneo I - A Nova Ordem
+                  Mundial</p>
+                <div id="container_aula">
+                  <p id="palavra2">A Nova Divisão do Trabalho</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/geografia/10---globalizacao/globalizacao-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 6-->
+                <p class="tituloaba1" id="mundo_contemporaneo_ii">AULAS DA LIÇÃO - O Mundo Contemporâneo II - A
+                  Globalização da Economia</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">O Conceito de Globalização</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/geografia/10---globalizacao/globalizacao-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Os Pilares da Globalização</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/geografia/10---globalizacao/globalizacao-iii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 7-->
+                <p class="tituloaba1" id="blocos_economicos">AULAS DA LIÇÃO - Blocos Econômicos</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">O Conceito de Blocos Econômicos</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/11---blocos-economicos/blocos-economicos-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 8-->
+                <p class="tituloaba1" id="geopolitica_da_america">AULAS DA LIÇÃO - Geopolítica da América</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Brexit</p>
+                  <p><a href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aovivo-brexit-2020">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Mercosul</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/11---blocos-economicos/blocos-economicos-mercosul">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Brics</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/geografia/11---blocos-economicos/brics">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 9-->
+                <p class="tituloaba1" id="geopolitica_da_europa">AULAS DA LIÇÃO - Geopolítica da Europa</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">NAFTA, a APEC, a CEI, a ALCA e a ALBA</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/11---blocos-economicos/blocos-economicos-iii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 11-->
+                <p class="tituloaba1" id="geopolitica_da_africa">AULAS DA LIÇÃO - Geopolítica da África</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Colonização Africana</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/geografia/12---africa/africa-colonizacao">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Características Naturais e Econômicas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/12---africa/africa-caracteristicas-naturais-e-economicas">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 12-->
+                <p class="tituloaba1" id="dominios_morfoclimaticos_brasileiros_i">AULAS DA LIÇÃO - Os Domínios
+                  Morfoclimáticos Brasileiros I</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Climas Brasileiros</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/04---climatologia/climas-brasileiros">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Hidrografia Brasileira I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/03---hidrografia/hidrografia-brasileira-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Hidrografia Brasileira II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/03---hidrografia/hidrografia-brasileira-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 13-->
+                <p class="tituloaba1" id="dominios_morfoclimaticos_brasileiros_ii">AULAS DA LIÇÃO - Os Domínios
+                  Morfoclimáticos Brasileiros II</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Climas Brasileiros</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/04---climatologia/climas-brasileiros">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 14-->
+                <p class="tituloaba1" id="problemas_ambientais_i">AULAS DA LIÇÃO - Problemas Ambientais I</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Problemas Ambientais</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/05---biogeografia/problemas-ambientais">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Recursos Naturais e Impactos Ambientais</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/05---biogeografia/recursos-impactos-ambientais-reprise-2019">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 15-->
+                <p class="tituloaba1" id="problemas_ambientais_ii">AULAS DA LIÇÃO - Problemas Ambientais II</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Aquecimento Global</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/04---climatologia/aquecimento-global">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 16-->
+                <p class="tituloaba1" id="geografia_agraria">AULAS DA LIÇÃO - Geografia Agrária</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Plantio e Colheita na Agricultura Brasileira</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/08---agricultura/agricultura-brasileira-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Revolução Verde e Agronegócio</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/08---agricultura/agricultura-brasileira-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 17-->
+                <p class="tituloaba1" id="populacao_i">AULAS DA LIÇÃO - População I</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Fases do Crescimento Populacional</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/06---populacao/fases-do-crescimento-populacional">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">População Brasileira</p>
+                  <p><a href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/populacobrasileira-aovivo-2020">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Demografia</p>
+                  <p><a href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo-demografia-geo-22">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 18-->
+                <p class="tituloaba1" id="populacao_ii">AULAS DA LIÇÃO - População II</p>
+                <div id="container_aula">
+                  <p id="palavra2">Censo Demográfico</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo-censo-demografico-geo-23">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 19-->
+                <p class="tituloaba1" id="urbanizacao_i">AULAS DA LIÇÃO - Urbanização I</p>
+                <div id="container_aula">
+                  <p id="palavra2">Urbanização</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/geografia/07---geografia-urbana/urbanizacao">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Urbanização Brasileira</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/07---geografia-urbana/urbanizacaobrasileira-reprise-aovivo-2017">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 21-->
+                <p class="tituloaba1" id="industria">AULAS DA LIÇÃO - Indústria</p>
+                <div id="container_aula">
+                  <p id="palavra2">Indústria Brasileira: Crescimentos e Crises</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/09---geoeconomia/industria-brasileira-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Tipos de Industrialização</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/geografia/09---geoeconomia/tipos-de-industrializacao">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
                 </div>
                 <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
               </nav>
             </div>
+
           </nav>
         </div>
         <!-- Menu de HISTÓRIA  -->
         <div class="texto-conexao-enem2" id="HISTORIA">
           <nav class="container-propaganda">
             <div class="tabela_menuPequeno" id="aulashistoria">
-
+              <!--
+            <button id="btn-mobile15" class="botao-aulas" onclick="histAno1()" href="">HISTÓRIA - VOLUME 1</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="histAno2()" href="">HISTÓRIA - VOLUME 2</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="histAno3()" href="">HISTÓRIA - VOLUME 3</button>
+-->
             </div>
             <!-- Menu de HIstoria Volume 1 -->
             <div class="descricao_tabela" id="historiaAno1">
-              <p class="tituloaba1" id="Antiguidade_v1">AULAS DA LIÇÃO - Antiguidade</p>
               <nav class="tabela3">
+                <!--Volume 1-->
+                <p class="tituloaba1" id="brasil_administracao_colonial">AULAS DA LIÇÃO - Brasil - Administração
+                  Colonial</p>
                 <div id="container_aula">
-                  <h1 id="palavra2">Civilizações Orientais: Mesopotâmia</h1>
-                  <a
-                    href="https://plataforma.aulalivre.net/disciplina/historia-geral/01---antiguidade/antiguidade-oriental-ii">
-                    <p><img src="acess/videos-solid-24.png" alt="Assistente de vídeo"></p>
-                  </a>
+                  <p id="palavra2">As Capitanias Hereditárias</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/02---brasil-colonia/as-capitanias-hereditarias">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
                 </div>
+
+                <!--Volume 2-->
+                <p class="tituloaba1" id="brasil_economia_colonial">AULAS DA LIÇÃO - Brasil - Economia Colonial</p>
+                <div id="container_aula">
+                  <p id="palavra2">Período Pré-Colonial</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/01---formacao-e-expansao/periodo-pre-colonial">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Ciclo do Ouro</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/02---brasil-colonia/ciclo-do-ouro">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Expansão Territorial e Bandeirantes</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/02---brasil-colonia/expansao-territorial-e-bandeirantes">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 3-->
+                <p class="tituloaba1" id="brasil_d_joao_vi_primeiro_reinado">AULAS DA LIÇÃO - Brasil - D. João VI e o 1º
+                  Reinado</p>
+                <div id="container_aula">
+                  <p id="palavra2">Revoltas Pela Independência</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/02---brasil-colonia/o-processo-de-independencia-do-brasil">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Período Joanino</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/03---brasil-imperio/periodo-joanino">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">A Independência do Brasil</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/03---brasil-imperio/independencia-do-brasil-primeiro-reinado-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">As Dificuldades do Primeiro Reinado</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/03---brasil-imperio/primeiro-reinado-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 4-->
+                <p class="tituloaba1" id="brasil_periodo_regencial">AULAS DA LIÇÃO - Brasil - Período Regencial</p>
+                <div id="container_aula">
+                  <p id="palavra2">A Política no Período Regencial</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/03---brasil-imperio/periodo-regencial-i-politica">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 5-->
+                <p class="tituloaba1" id="brasil_reinado_d_pedro_ii">AULAS DA LIÇÃO - Brasil - O Reinado de D. Pedro II
+                </p>
+                <div id="container_aula">
+                  <p id="palavra2">Revoltas e Guerras no Segundo Reinado</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/03---brasil-imperio/segundo-reinado-ii-revoltas-e-guerras">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Economia no Segundo Reinado</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/03---brasil-imperio/segundo-reinado-i-economia">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">A Queda da Monarquia</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/03---brasil-imperio/segundo-reinado-iv-queda-da-monarquia">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 6-->
+                <p class="tituloaba1" id="brasil_republicano">AULAS DA LIÇÃO - Brasil Republicano</p>
+                <div id="container_aula">
+                  <p id="palavra2">A República da Espada e a República Oligárquica</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/04---republica-velha/republica-velha-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 7-->
+                <p class="tituloaba1" id="republica_oligarquias">AULAS DA LIÇÃO - República das Oligarquias</p>
+                <div id="container_aula">
+                  <p id="palavra2">A Economia na República Velha</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/04---republica-velha/republica-velha-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Questões Operárias na República Velha</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/04---republica-velha/republica-velha-iv-questoes-operarias">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Movimentos Messiânicos na República Velha</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/04---republica-velha/republica-velha-iii-revoltas-messianicas">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">O Tenentismo na República Velha</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/04---republica-velha/republica-velha-v-tenentismo">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Revolução de 1930</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/05---era-vargas/revolucao-de-1930">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 8-->
+                <p class="tituloaba1" id="era_getuliana">AULAS DA LIÇÃO - Era Getuliana</p>
+                <div id="container_aula">
+                  <p id="palavra2">Vargas, do Provisório ao Permanente</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/05---era-vargas/era-vargas-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Estado Novo</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/05---era-vargas/era-vargas-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Controle e Propaganda na Era Vargas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/05---era-vargas/controle-propaganda-vargas-reprise-2019">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 10-->
+                <p class="tituloaba1" id="estado_populista_ii">AULAS DA LIÇÃO - Estado Populista II</p>
+                <div id="container_aula">
+                  <p id="palavra2">Dutra e a Redemocratização</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/06---periodo-entre-1945-e-1964/dutra-e-a-redemocratizacao">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">O Retorno de Vargas ao Poder</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/06---periodo-entre-1945-e-1964/vargas-iv">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 11-->
+                <p class="tituloaba1" id="regime_militar_i">AULAS DA LIÇÃO - Regime Militar I</p>
+                <div id="container_aula">
+                  <p id="palavra2">O Governo Castelo Branco</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/07---regime-militar/ditadura-militar-i-castelo-branco">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">O Governo Costa e Silva</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/07---regime-militar/ditadura-militar-ii-costa-e-silva">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">O Governo Médice</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/07---regime-militar/ditadura-militar-iii-medici">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 12-->
+                <p class="tituloaba1" id="regime_militar_ii">AULAS DA LIÇÃO - Regime Militar II</p>
+                <div id="container_aula">
+                  <p id="palavra2">O Governo Geisel</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/07---regime-militar/ditadura-militar-iv-geisel">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Processo de Redemocratização</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/08---nova-republica/redemocratizacao-reprise-aovivo-2017">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 13-->
+                <p class="tituloaba1" id="republica_nova">AULAS DA LIÇÃO - República Nova</p>
+                <div id="container_aula">
+                  <p id="palavra2">Constituições Brasileiras II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/09---constituicoes/constitucoes-brasileiras-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Redemocratização: Figueiredo - Sarney</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/08---nova-republica/redemocratizacao-figueiredo-sarney">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Os Governos Collor e Itamar</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/08---nova-republica/nova-republica-i-collor-itamar">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">O Governo FHC</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/08---nova-republica/nova-republica-ii-fhc">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">O Governo Lula</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/08---nova-republica/nova-republica-iii-lula">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">O Governo Dilma</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-do-brasil/08---nova-republica/brasil-atual-dilma">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 14-->
+                <p class="tituloaba1" id="idade_media_feudalismo">AULAS DA LIÇÃO - Idade Média - Feudalismo e a Igreja
+                </p>
+                <div id="container_aula">
+                  <p id="palavra2">Feudalismo</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/historia-geral/02---idade-media/feudalismo">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 15-->
+                <p class="tituloaba1" id="reforma_contrarreforma">AULAS DA LIÇÃO - Reforma e Contrarreforma</p>
+                <div id="container_aula">
+                  <p id="palavra2">Reforma e Contrarreforma I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-geral/04---reforma-religiosa/reforma-e-contrarreforma-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Reforma e Contrarreforma II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-geral/04---reforma-religiosa/reforma-e-contrarreforma-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Reforma e Contrarreforma III</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-geral/04---reforma-religiosa/reforma-e-contrarreforma-iii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 16-->
+                <p class="tituloaba1" id="iluminismo">AULAS DA LIÇÃO - Iluminismo</p>
+                <div id="container_aula">
+                  <p id="palavra2">Iluminismo e Despotismo Esclarecido</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-geral/06---revolucoes/iluminismo-e-despotismo-esclarecido">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 17-->
+                <p class="tituloaba1" id="revolucao_industrial">AULAS DA LIÇÃO - Revolução Industrial</p>
+                <div id="container_aula">
+                  <p id="palavra2">Revolução Industrial</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-geral/06---revolucoes/revolucao-industrial">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 18-->
+                <p class="tituloaba1" id="imperialismo">AULAS DA LIÇÃO - Imperialismo</p>
+                <div id="container_aula">
+                  <p id="palavra2">Imperialismo e Neocolonialismo</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-geral/08---imperialismo-e-neocolonialismo/imperialismo-e-neocolonialismo">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 19-->
+                <p class="tituloaba1" id="primeira_guerra_mundial">AULAS DA LIÇÃO - 1ª Guerra Mundial</p>
+                <div id="container_aula">
+                  <p id="palavra2">Primeira Guerra Mundial</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-geral/09---1-e-2-guerra-mundial/primeira-guerra-mundial">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 20-->
+                <p class="tituloaba1" id="periodo_entre_guerras">AULAS DA LIÇÃO - Período Entre Guerras</p>
+                <div id="container_aula">
+                  <p id="palavra2">Revolução Russa</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-geral/09---1-e-2-guerra-mundial/reolucao-russa-17">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Crise de 1929</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-geral/09---1-e-2-guerra-mundial/crise-de-1929">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Nazifascismo</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-geral/09---1-e-2-guerra-mundial/nazifascismo">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 21-->
+                <p class="tituloaba1" id="segunda_guerra_mundial">AULAS DA LIÇÃO - 2ª Guerra Mundial</p>
+                <div id="container_aula">
+                  <p id="palavra2">Segunda Guerra Mundial</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-geral/09---1-e-2-guerra-mundial/segunda-guerra-mundial">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 22-->
+                <p class="tituloaba1" id="periodo_pos_segunda_guerra">AULAS DA LIÇÃO - Período Pós - 2ª Guerra</p>
+                <div id="container_aula">
+                  <p id="palavra2">Guerra Fria I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-geral/10---guerra-fria/guerra-fria-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Guerra Fria II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-geral/10---guerra-fria/guerra-fria-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Guerra Fria III</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-geral/10---guerra-fria/guerra-fria-3">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Guerra Fria IV</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-geral/10---guerra-fria/guerra-fria-iv">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Independências na Ásia</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/historia-geral/11---asia-e-africa/as-independencias-na-asia">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
                 <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
               </nav>
             </div>
@@ -213,19 +1804,241 @@
         <div class="texto-conexao-enem2" id="INGLES">
           <nav class="container-propaganda">
             <div class="tabela_menuPequeno" id="aulasingles">
+              <!--
+            <button id="btn-mobile15" class="botao-aulas" onclick="ingAno1()" href="">INGLÊS - VOLUME 1</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="ingAno2()" href="">INGLÊS - VOLUME 2</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="ingAno3()" href="">INGLÊS - VOLUME 3</button>
+          -->
             </div>
+
             <!-- Menu de INGLES Volume 1 -->
             <div class="descricao_tabela" id="inglesAno1">
-              <p class="tituloaba1" id="cartuns_charges_v1">Aulas da Lição – A criatividade nos cartuns e charges</p>
               <nav class="tabela3">
+                <!--Volume 1-->
+                <p class="tituloaba1" id="cartoons_e_charges">AULAS DA LIÇÃO - Cartoons e Charges</p>
                 <div id="container_aula">
-                  <h1 id="palavra2">Questão 01 | Phrasal Verbs | Enem 2019</h1>
-                  <a
-                    href="https://plataforma.aulalivre.net/disciplina/questoes-enem/enem-2019-linguagens-codigos-e-suas-tecnologias-caderno-branco/enem-2019-linguagens-ing-01">
-                    <p><img src="acess/videos-solid-24.png" alt="Assistente de vídeo"></p>
-                  </a>
+                  <p id="palavra2">Expressões idiomáticas em inglês</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo-expressoes-idiomaticas-em-ingles-ing-24">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
                 </div>
+
+                <!--Volume 2-->
+                <p class="tituloaba1" id="anuncios_publicitarios_e_infograficos">AULAS DA LIÇÃO - Anúncios Publicitários
+                  e Infográficos</p>
+                <div id="container_aula">
+                  <p id="palavra2">Usos do ING</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/4---verb-patterns/usos-do-ing">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 3-->
+                <p class="tituloaba1" id="acesso_a_informacoes_e_conhecimento">AULAS DA LIÇÃO - Acesso a Informações e
+                  Conhecimento</p>
+                <div id="container_aula">
+                  <p id="palavra2">Revisão de Inglês | Aula ao vivo</p>
+                  <p><a href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aovivo-revisao-enem-ingles-2022">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 4-->
+                <p class="tituloaba1" id="letras_de_musicas">AULAS DA LIÇÃO - Letras de Músicas</p>
+                <div id="container_aula">
+                  <p id="palavra2">Enem: Interpretando questões de Inglês</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo--enem-interpretando-questoes-de-ingles">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 5-->
+                <p class="tituloaba1" id="literatura">AULAS DA LIÇÃO - Literatura</p>
+                <div id="container_aula">
+                  <p id="palavra2">Questões Enem</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/ingles/11---resolucao-de-questoes-do-enem/ingles-enem">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 6-->
+                <p class="tituloaba1" id="irregular_verbs">AULAS DA LIÇÃO - Irregular Verbs</p>
+                <div id="container_aula">
+                  <p id="palavra2">Irregular verbs</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/3----verb-tenses/irregular-verbs">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 7-->
+                <p class="tituloaba1" id="irregular_plurals">AULAS DA LIÇÃO - Irregular Plurals</p>
+                <div id="container_aula">
+
+                  <p id="palavra2">Irregular verbs</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/3----verb-tenses/irregular-verbs">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 8-->
+                <p class="tituloaba1" id="adjectives">AULAS DA LIÇÃO - Adjectives</p>
+                <div id="container_aula">
+                  <p id="palavra2">Adjectives</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/1---parts-of-speech/adjectives">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 9-->
+                <p class="tituloaba1" id="interrogative_pronouns">AULAS DA LIÇÃO - Interrogative Pronouns</p>
+                <div id="container_aula">
+                  <p id="palavra2">Pronouns</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/1---parts-of-speech/pronouns-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 10-->
+                <p class="tituloaba1" id="indefinite_pronouns">AULAS DA LIÇÃO - Indefinite Pronouns</p>
+                <div id="container_aula">
+                  <p id="palavra2">Pronouns</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/1---parts-of-speech/pronouns-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 11-->
+                <p class="tituloaba1" id="adverbs">AULAS DA LIÇÃO - Adverbs</p>
+                <div id="container_aula">
+                  <p id="palavra2">Adverbs</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/1---parts-of-speech/adverbs">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 12-->
+                <p class="tituloaba1" id="prepositions">AULAS DA LIÇÃO - Prepositions</p>
+                <div id="container_aula">
+                  <p id="palavra2">Prepositions</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/1---parts-of-speech/prepositions">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 13-->
+                <p class="tituloaba1" id="anomalous_verbs">AULAS DA LIÇÃO - Anomalous Verbs</p>
+                <div id="container_aula">
+                  <p id="palavra2">Modal verbs</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/5---verbs/modal-verbs">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 14-->
+                <p class="tituloaba1" id="conditional_causes">AULAS DA LIÇÃO - Conditional Causes</p>
+                <div id="container_aula">
+                  <p id="palavra2">Conditional sentences</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/5---verbs/conditional-sentences">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 15-->
+                <p class="tituloaba1" id="gerund_infinitive">AULAS DA LIÇÃO - Gerund & Infinitive</p>
+                <div id="container_aula">
+                  <p id="palavra2">Infinitive X ing</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/4---verb-patterns/infinitive-x-ing">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 16-->
+                <p class="tituloaba1" id="question_tag">AULAS DA LIÇÃO - Question-tag</p>
+                <div id="container_aula">
+                  <p id="palavra2">Usos do ING</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/4---verb-patterns/usos-do-ing">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 17-->
+                <p class="tituloaba1" id="passive_voice">AULAS DA LIÇÃO - Passive Voice</p>
+                <div id="container_aula">
+                  <p id="palavra2">Passive voice</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/6---voices/passive-voice">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 18-->
+                <p class="tituloaba1" id="reported_speech">AULAS DA LIÇÃO - Reported Speech</p>
+                <div id="container_aula">
+                  <p id="palavra2">Reported speech</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/7---speech/reported-speech-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 19-->
+                <p class="tituloaba1" id="vocabulary">AULAS DA LIÇÃO - Vocabulary</p>
+                <div id="container_aula">
+                  <p id="palavra2">Vocabulary</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/10---expressions/vocabulary">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 20-->
+                <p class="tituloaba1" id="verbal_tenses">AULAS DA LIÇÃO - Verbal Tenses</p>
+                <div id="container_aula">
+                  <p id="palavra2">Verbs Tenses I - Simple Present</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/3----verb-tenses/verbs-tenses">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Verbs Tenses II - Present Continuous</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/ingles/3----verb-tenses/verbs-tenses-present-continuous">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Verb Tenses III - Simple past verb to be</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/ingles/3----verb-tenses/verb-tenses-ii-simple-past-verb-to-be">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Verb Tenses IV - Past Continuous</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/ingles/3----verb-tenses/verb-tenses-past-continuous">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 21-->
+                <p class="tituloaba1" id="phrasal_verbs">AULAS DA LIÇÃO - Phrasal Verbs</p>
+                <div id="container_aula">
+                  <p id="palavra2">Questão 1 | Inglês | Phrasal Verbs</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/questoes-enem/enem-2019-linguagens-codigos-e-suas-tecnologias-caderno-branco/enem-2019-linguagens-ing-01">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 22-->
+                <p class="tituloaba1" id="idiomatic_expressions">AULAS DA LIÇÃO - Idiomatic Expressions</p>
+                <div id="container_aula">
+                  <p id="palavra2">Expressões idiomáticas em inglês</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo-expressoes-idiomaticas-em-ingles-ing-24">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 23-->
+                <p class="tituloaba1" id="technical_vocabulary">AULAS DA LIÇÃO - Technical Vocabulary</p>
+                <div id="container_aula">
+                  <p id="palavra2">Vocabulary</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/10---expressions/vocabulary">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 24-->
+                <p class="tituloaba1" id="false_cognates">AULAS DA LIÇÃO - False Cognates</p>
+                <div id="container_aula">
+                  <p id="palavra2">Vocabulary</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/10---expressions/vocabulary">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 25-->
+                <p class="tituloaba1" id="double_sense_words">AULAS DA LIÇÃO - Double Sense Words</p>
+                <div id="container_aula">
+                  <p id="palavra2">Vocabulary</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/ingles/10---expressions/vocabulary">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+
+
                 <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
+
               </nav>
             </div>
           </nav>
@@ -234,18 +2047,17 @@
         <div class="texto-conexao-enem2" id="LITERATURA">
           <nav class="container-propaganda">
             <div class="tabela_menuPequeno" id="aulasliteratura">
+              <!--
+            <button id="btn-mobile15" class="botao-aulas" onclick="litAno1()" href="">LITERATURA - VOLUME 1</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="litAno2()" href="">LITERATURA - VOLUME 2</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="litAno3()" href="">LITERATURA - VOLUME 3</button>
+          -->
             </div>
             <!-- Menu de LIERATURA Volume 1 -->
             <div class="descricao_tabela" id="literaturaAno1">
-              <p class="tituloaba1" id="generos_literarios_v1">AULAS DA LIÇÃO – Gêneros literários</p>
               <nav class="tabela3">
-                <div id="container_aula">
-                  <h1 id="palavra2">Gêneros Literários I</h1>
-                  <a
-                    href="https://plataforma.aulalivre.net/disciplina/literatura/01---generos-literarios/generos-literarios-i">
-                    <p><img src="acess/videos-solid-24.png" alt="Assistente de vídeo"></p>
-                  </a>
-                </div>
+
+
                 <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
               </nav>
             </div>
@@ -254,106 +2066,1072 @@
         <!-- Menu de MATEMÁTICA   -->
         <div class="texto-conexao-enem2" id="MATEMATICA">
           <nav class="container-propaganda">
-          <div class="tabela_menuPequeno" id="aulasmatematica">
-   </div>
-        <!-- Menu de MATEMÁTICA Volume 1 -->
-        <div class="descricao_tabela" id="matematicaAno1">
-              <p class="tituloaba1" id="dados_estatisticos_v1">Aulas da lição - Os dados estatísticos no dia a dia do cidadão</p>
+            <div class="tabela_menuPequeno" id="aulasmatematica">
+              <!--
+            <button id="btn-mobile15" class="botao-aulas" onclick="matAno1()" href="">MATEMÁTICA - VOLUME 1</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="matAno2()" href="">MATEMÁTICA - VOLUME 2</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="matAno3()" href="">MATEMÁTICA - VOLUME 3</button>
+-->
+            </div>
+            <!-- Menu de MATEMÁTICA Volume 1 -->
+            <div class="descricao_tabela" id="matematicaAno1">
               <nav class="tabela3">
+                <!--Volume 1-->
+                <p class="tituloaba1" id="conjuntos_numericos">AULAS DA LIÇÃO - Conjuntos Numéricos</p>
                 <div id="container_aula">
-                  <h1 id="palavra2">Estatística I</h1>
-                  <a href="https://plataforma.aulalivre.net/disciplina/matematica/14---estatistica/estatistica-i">
-                    <p><img src="acess/videos-solid-24.png" alt="Assistente de vídeo"></p>
-                  </a>
+                  <p id="palavra2">Teoria dos conjuntos</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/04---conjuntos-numericos/teoria-dos-conjuntos-">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
                 </div>
-            <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
-          </nav>       
+
+                <!--Volume 3-->
+                <p class="tituloaba1" id="numeros_decimais">AULAS DA LIÇÃO - Números Decimais</p>
+                <div id="container_aula">
+                  <p id="palavra2">Números decimais e notação científica</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/02--matematica-basica-ii/numeros-decimais-e-notacao-cientifica">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 4-->
+                <p class="tituloaba1" id="angulos">AULAS DA LIÇÃO - Ângulos</p>
+                <div id="container_aula">
+                  <p id="palavra2">Ângulos</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/matematica/03---geometria-plana/angulos">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 5-->
+                <p class="tituloaba1" id="fracoes_conceitos_basicos">AULAS DA LIÇÃO - Frações - Conceitos Básicos</p>
+                <div id="container_aula">
+                  <p id="palavra2">Frações I - Propriedades básicas e notação científica</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/matematica/01---matematica-basica-i/fracao-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 6-->
+                <p class="tituloaba1" id="fracoes_operacoes">AULAS DA LIÇÃO - Frações - Operações</p>
+                <div id="container_aula">
+                  <p id="palavra2">Frações II - Fração de uma quantidade</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/01---matematica-basica-i/fracoes-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 8-->
+                <p class="tituloaba1" id="razao_proporcao">AULAS DA LIÇÃO - Razão e Proporção</p>
+                <div id="container_aula">
+                  <p id="palavra2">Razão e proporção</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/02--matematica-basica-ii/razao-e-proporcao-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Grandezas direta ou inversamente proporcionais e regra de três</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/02--matematica-basica-ii/razao-e-proporcao-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 9-->
+                <p class="tituloaba1" id="teorema_de_tales">AULAS DA LIÇÃO - Teorema de Tales</p>
+                <div id="container_aula">
+                  <p id="palavra2">Teorema da proporcionalidade</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/03---geometria-plana/teorema-de-tales">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 10-->
+                <p class="tituloaba1" id="potenciacao_e_radiciacao">AULAS DA LIÇÃO - Potenciação e Radiciação</p>
+                <div id="container_aula">
+                  <p id="palavra2">Potenciação I - Propriedades básicas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/01---matematica-basica-i/potenciacao-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Potenciação II - Notação científica e exercícios resolvidos</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/01---matematica-basica-i/potenciacao-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Radiciação</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/01---matematica-basica-i/radiciacao">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Racionalização de denominadores</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/01---matematica-basica-i/racionalizacao-e-denominadores">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 11-->
+                <p class="tituloaba1" id="triangulos_classificacao_propriedades">AULAS DA LIÇÃO - Triângulos -
+                  Classificação e Propriedades</p>
+                <div id="container_aula">
+                  <p id="palavra2">Introdução à trigonometria - Sinais, arcos notáveis e redução ao primeiro quadrante
+                  </p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/09---trigonometria/trigonometria-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 12-->
+                <p class="tituloaba1" id="triangulos_semelhanca">AULAS DA LIÇÃO - Triângulos - Semelhança</p>
+                <div id="container_aula">
+                  <p id="palavra2">Introdução à trigonometria III: funções trigonométricas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/09---trigonometria/trigonometria-iii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 13-->
+                <p class="tituloaba1" id="porcentagem">AULAS DA LIÇÃO - Porcentagem</p>
+                <div id="container_aula">
+                  <p id="palavra2">Porcentagem</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/02--matematica-basica-ii/porcentagem">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 14-->
+                <p class="tituloaba1" id="triangulos_retangulos_relacoes_metricas">AULAS DA LIÇÃO - Triângulos
+                  Retângulos - Relações Métricas</p>
+                <div id="container_aula">
+                  <p id="palavra2">Relações métricas no triângulo retângulo</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/03---geometria-plana/relacoes-metricas-no-triangulo-retangulo">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 15-->
+                <p class="tituloaba1" id="triangulos_retangulos_relacoes_trigonometricas">AULAS DA LIÇÃO - Triângulos
+                  Retângulos - Relações Trigonométricas</p>
+                <div id="container_aula">
+                  <p id="palavra2">Lei dos senos e lei dos cossenos</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/09---trigonometria/trigonometria-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 18-->
+                <p class="tituloaba1" id="equacoes_de_primeiro_grau">AULAS DA LIÇÃO - Equações de Primeiro Grau</p>
+                <div id="container_aula">
+                  <p id="palavra2">Equações do 1° Grau</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/matematica/05---funcoes-i/equacoes-do-1-grau">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 19-->
+                <p class="tituloaba1" id="equacoes_de_segundo_grau">AULAS DA LIÇÃO - Equações de Segundo Grau</p>
+                <div id="container_aula">
+                  <p id="palavra2">Equações do 2° Grau</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/matematica/05---funcoes-i/equacoes-do-2-grau">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 21-->
+                <p class="tituloaba1" id="quadrilateros_areas">AULAS DA LIÇÃO - Quadriláteros - Áreas</p>
+                <div id="container_aula">
+                  <p id="palavra2">Figuras Geométricas Inscritas | reprise de aula ao vivo</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/03---geometria-plana/figurasinscritas-reprise-aovivo-2017">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 22-->
+                <p class="tituloaba1" id="sistemas_de_equacoes">AULAS DA LIÇÃO - Sistemas de Equações</p>
+                <div id="container_aula">
+                  <p id="palavra2">Classificação quanto ao tipo de solução: SPD, SPI e SI</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/13---sistema-de-equacoes-lineares/sistema-de-equacoes-lineares-iii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 25-->
+                <p class="tituloaba1" id="matematica_financeira">AULAS DA LIÇÃO - Matemática Financeira</p>
+                <div id="container_aula">
+                  <p id="palavra2">Juros simples e compostos</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/02--matematica-basica-ii/juros-simples-e-compostos">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 26-->
+                <p class="tituloaba1" id="nocao_de_estatistica">AULAS DA LIÇÃO - Noções de Estatística</p>
+                <div id="container_aula">
+                  <p id="palavra2">Probabilidade I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/11---probabilidade/probabilidade-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Probabilidade II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/11---probabilidade/probabilidade-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 27-->
+                <p class="tituloaba1" id="circulos_circunferencias">AULAS DA LIÇÃO - Círculos e Circunferências</p>
+                <div id="container_aula">
+                  <p id="palavra2">Geometria analítica III - Círculo</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/16---geometria-analitica/matematica-geometria-analitica-iii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 28-->
+                <p class="tituloaba1" id="prismas_cubos">AULAS DA LIÇÃO - Prismas e Cubos</p>
+                <div id="container_aula">
+                  <p id="palavra2">Geometria espacial I: poliedros e prismas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/15---geometria-espacial/geometria-espacial-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 29-->
+                <p class="tituloaba1" id="cilindros">AULAS DA LIÇÃO - Cilindros</p>
+                <div id="container_aula">
+                  <p id="palavra2">Cilindros e cones</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/15---geometria-espacial/geometria-espacial-iii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 30-->
+                <p class="tituloaba1" id="funcoes">AULAS DA LIÇÃO - Funções</p>
+                <div id="container_aula">
+                  <p id="palavra2">Funções I - Conceito - Valor numérico</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/05---funcoes-i/funcoes-i-conceito-valor-numerico">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Funções do 1º grau I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/05---funcoes-i/funcoes-do-1-grau-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Funções do 1º grau II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/05---funcoes-i/funcoes-do-1-grau-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Funções exponenciais</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/06---funcoes-ii/funcoes-exponenciais">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Função modular</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/matematica/06---funcoes-ii/funcao-modular">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 31-->
+                <p class="tituloaba1" id="cones">AULAS DA LIÇÃO - Cones</p>
+                <div id="container_aula">
+                  <p id="palavra2">Cilindros e cones</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/15---geometria-espacial/geometria-espacial-iii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 32-->
+                <p class="tituloaba1" id="pirâmides">AULAS DA LIÇÃO - Pirâmides</p>
+                <div id="container_aula">
+                  <p id="palavra2">Geometria espacial II: pirâmides</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/15---geometria-espacial/geometria-espacial-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 34-->
+                <p class="tituloaba1" id="esferas">AULAS DA LIÇÃO - Esferas</p>
+                <div id="container_aula">
+                  <p id="palavra2">Geometria espacial IV: esfera e tronco de pirâmides e cones</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/matematica/15---geometria-espacial/geometria-espacial-iv">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+
+
+                <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
+              </nav>
+
+            </div>
+          </nav>
         </div>
-        </nav>
-      </div>
-         <!-- Menu de Português-->
-         <div class="texto-conexao-enem2" id="PORTUGUES">
-                <nav class="container-propaganda">
-                  <div class="tabela_menuPequeno" id="aulasPORTUGUES">
-                 </div>
-                    <!-- Menu de Português Volume 1 -->
-                  <div class="descricao_tabela" id="portuguesAno1">
-                    <p class="tituloaba1" id="adjetivo_pronome_v1">AULAS DA LIÇÃO – Classes nominais | Substantivo, adjetivo e pronome</p>
-                      <nav class="tabela3">
-                        <div id="container_aula">
-                          <h1 id="palavra2">Substantivos</h1>
-                          <a href="https://plataforma.aulalivre.net/disciplina/portugues/04---morfologia-i/classes-gramaticais-i-substantivo">
-                            <p><img src="acess/videos-solid-24.png" alt="Assistente de vídeo"></p>
-                          </a>
-                        </div>              
-                      <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
-                    </nav>
-                  </div>                
-                </nav>
+        <!-- Menu de Português-->
+        <div class="texto-conexao-enem2" id="PORTUGUES">
+          <nav class="container-propaganda">
+            <div class="tabela_menuPequeno" id="aulasPORTUGUES">
+              <!--      
+                  <button id="btn-mobile15" class="botao-aulas" onclick="porAno1()" href="">PORTUGUÊS - VOLUME 1</button>
+                  <button id="btn-mobile15" class="botao-aulas" onclick="porAno2()" href="">PORTUGUÊS - VOLUME 2</button>
+-->
+            </div>
+            <!-- Menu de Português Volume 1 -->
+            <div class="descricao_tabela" id="portuguesAno1">
+              <nav class="tabela3">
+                <!--Volume 1-->
+                <p class="tituloaba1" id="estudo_do_sujeito">AULAS DA LIÇÃO - Estudo do Sujeito I</p>
+                <div id="container_aula">
+                  <p id="palavra2">Sujeito I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/07---analise-sintatica-interna/analise-sintatica-interna-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Sujeito II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/07---analise-sintatica-interna/analise-sintatica-interna-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 2-->
+                <p class="tituloaba1" id="estudo_do_sujeito_ii">AULAS DA LIÇÃO - Estudo do Sujeito II</p>
+                <div id="container_aula">
+                  <p id="palavra2">Sujeito II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/07---analise-sintatica-interna/analise-sintatica-interna-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 3-->
+                <p class="tituloaba1" id="estudo_do_sujeito_iii">AULAS DA LIÇÃO - Estudo do Sujeito III</p>
+                <div id="container_aula">
+                  <p id="palavra2">Sujeito I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/07---analise-sintatica-interna/analise-sintatica-interna-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 4-->
+                <p class="tituloaba1" id="aposto">AULAS DA LIÇÃO - Aposto</p>
+                <div id="container_aula">
+                  <p id="palavra2">Aposto e Vocativo</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/07---analise-sintatica-interna/analise-sintatica-interna-ix">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 5-->
+                <p class="tituloaba1" id="vocativo">AULAS DA LIÇÃO - Vocativo</p>
+                <div id="container_aula">
+                  <p id="palavra2">Aposto e Vocativo</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/07---analise-sintatica-interna/analise-sintatica-interna-ix">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 6-->
+                <p class="tituloaba1" id="preposicao">AULAS DA LIÇÃO - Preposição</p>
+                <div id="container_aula">
+                  <p id="palavra2">Classes Gramaticais</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo--enem-classes-gramaticais">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 7-->
+                <p class="tituloaba1" id="o_verbo_e_seus_complementos_i">AULAS DA LIÇÃO - O Verbo e seus complementos I
+                </p>
+                <div id="container_aula">
+                  <p id="palavra2">Enem: Classes Gramaticais</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo--enem-classes-gramaticais">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 8-->
+                <p class="tituloaba1" id="o_verbo_e_seus_complementos_ii">AULAS DA LIÇÃO - O Verbo e seus complementos
+                  II</p>
+                <div id="container_aula">
+                  <p id="palavra2">Enem: Classes Gramaticais</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo--enem-classes-gramaticais">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 9-->
+                <p class="tituloaba1" id="verbo_de_ligacao">AULAS DA LIÇÃO - Verbo de Ligação</p>
+                <div id="container_aula">
+                  <p id="palavra2">Enem: Classes Gramaticais</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo--enem-classes-gramaticais">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 10-->
+                <p class="tituloaba1" id="vozes_do_verbo">AULAS DA LIÇÃO - Vozes do Verbo</p>
+                <div id="container_aula">
+                  <p id="palavra2">Vozes do verbo</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/05---morfologia-ii---verbos/vozes-do-verbo-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 11-->
+                <p class="tituloaba1" id="pronome_relativo">AULAS DA LIÇÃO - Pronome Relativo</p>
+                <div id="container_aula">
+                  <p id="palavra2">Funções do pronome relativo</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/13---funcoes-do-pronome-relativo/funcoes-do-pronome-relativo">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 12-->
+                <p class="tituloaba1" id="sintaxe_de_regencia_i">AULAS DA LIÇÃO - Sintaxe de Regência I</p>
+                <div id="container_aula">
+                  <p id="palavra2">Adjunto adnominal</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/07---analise-sintatica-interna/analise-sintatica-interna-vii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 13-->
+                <p class="tituloaba1" id="sintaxe_de_regencia_ii">AULAS DA LIÇÃO - Sintaxe de Regência II</p>
+                <div id="container_aula">
+                  <p id="palavra2">Regência verbal I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/10---regencia-e-crase/regencia-verbal-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Regência verbal II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/10---regencia-e-crase/regencia-verbal-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 14-->
+                <p class="tituloaba1" id="sintaxe_de_regencia_iii">AULAS DA LIÇÃO - Sintaxe de Regência III</p>
+                <div id="container_aula">
+                  <p id="palavra2">Aula de questões: regência verbal e crase</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/10---regencia-e-crase/portugues-questoes-x">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Regência Verbal II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/10---regencia-e-crase/regencia-verbal-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 15-->
+                <p class="tituloaba1" id="crase_i">AULAS DA LIÇÃO - Crase I</p>
+                <div id="container_aula">
+                  <p id="palavra2">Crase I</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/portugues/10---regencia-e-crase/crase-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Crase II</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/portugues/10---regencia-e-crase/crase-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 16-->
+                <p class="tituloaba1" id="crase_ii">AULAS DA LIÇÃO - Crase II</p>
+                <div id="container_aula">
+                  <p id="palavra2">Crase I</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/portugues/10---regencia-e-crase/crase-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Aula questões: Regência verbal e Crase</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/10---regencia-e-crase/portugues-questoes-x">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Crase II</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/portugues/10---regencia-e-crase/crase-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 17-->
+                <p class="tituloaba1" id="sintaxe_concordancia_i">AULAS DA LIÇÃO - Sintaxe de Concordância I</p>
+                <div id="container_aula">
+                  <p id="palavra2">Concordância nominal I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/09---concordancia-nominal-e-verbal/concordancia-nominal-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 18-->
+                <p class="tituloaba1" id="sintaxe_concordancia_ii">AULAS DA LIÇÃO - Sintaxe de Concordância II</p>
+                <div id="container_aula">
+                  <p id="palavra2">Concordância Verbal II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/09---concordancia-nominal-e-verbal/concordancia-verbal-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Concordância Verbal I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/09---concordancia-nominal-e-verbal/concordancia-verbal-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 19-->
+                <p class="tituloaba1" id="sintaxe_concordancia_iii">AULAS DA LIÇÃO - Sintaxe de Concordância III</p>
+                <div id="container_aula">
+                  <p id="palavra2">Concordância nominal II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/09---concordancia-nominal-e-verbal/concordancia-nominal-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Concordância nominal III</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/09---concordancia-nominal-e-verbal/concordancia-nominal-iii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 20-->
+                <p class="tituloaba1" id="sintaxe_concordancia_iv">AULAS DA LIÇÃO - Sintaxe de Concordância IV</p>
+                <div id="container_aula">
+                  <p id="palavra2">Aula de Questões: concordância nominal</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/09---concordancia-nominal-e-verbal/portuguesquestoes-viii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Concordância verbal III</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/09---concordancia-nominal-e-verbal/concordancia-verbal-iii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Aula de Questões: concordância verbal</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/09---concordancia-nominal-e-verbal/portugues-questoes-ix">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 21-->
+                <p class="tituloaba1" id="conjuncao_coordenativas">AULAS DA LIÇÃO - Conjunções Coordenativas</p>
+                <div id="container_aula">
+                  <p id="palavra2">Orações coordenadas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/08---analise-sintatica-externa/analise-sintatica-externa-vii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 22-->
+                <p class="tituloaba1" id="conjuncao_subordinadas_adverbiais">AULAS DA LIÇÃO - Conjunções Subordinadas
+                  Adverbiais</p>
+                <div id="container_aula">
+                  <p id="palavra2">Orações subordinadas adverbiais I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/08---analise-sintatica-externa/analise-sintatica-externa-v">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <div id="container_aula">
+                  <p id="palavra2">Orações subordinadas adverbiais II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/08---analise-sintatica-externa/analise-sintatica-externa-vi">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 23-->
+                <p class="tituloaba1" id="figuras_de_linguagem_i">AULAS DA LIÇÃO - Figuras de Linguagem I</p>
+                <div id="container_aula">
+                  <p id="palavra2">Figuras de linguagem</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/redacao/04---semantica/figura-de-linguagem">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 24-->
+                <p class="tituloaba1" id="figuras_de_linguagem_ii">AULAS DA LIÇÃO - Figuras de Linguagem II</p>
+                <div id="container_aula">
+                  <p id="palavra2">Figuras de linguagem</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/redacao/04---semantica/figura-de-linguagem">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 25-->
+                <p class="tituloaba1" id="formacao_de_palavras_i">AULAS DA LIÇÃO - Formação de Palavras I</p>
+                <div id="container_aula">
+                  <p id="palavra2">Formação de palavras I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/03---formacao-de-palavras/formacao-de-palavras-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 26-->
+                <p class="tituloaba1" id="formacao_de_palavras_ii">AULAS DA LIÇÃO - Formação de Palavras II</p>
+                <div id="container_aula">
+                  <p id="palavra2">Formação de palavras II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/03---formacao-de-palavras/formacao-de-palavras-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 26-->
+                <p class="tituloaba1" id="formacao_de_palavras_iii">AULAS DA LIÇÃO - Formação de Palavras III</p>
+                <div id="container_aula">
+                  <p id="palavra2">Formação de palavras III</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/03---formacao-de-palavras/formacao-de-palavras-iii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 27-->
+                <p class="tituloaba1" id="verbos_i">AULAS DA LIÇÃO - Verbos I</p>
+                <div id="container_aula">
+                  <p id="palavra2">Verbos | Aula ao vivo</p>
+                  <p><a href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo-verbos-por-22">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 28-->
+                <p class="tituloaba1" id="verbos_ii">AULAS DA LIÇÃO - Verbos II</p>
+                <div id="container_aula">
+                  <p id="palavra2">Verbos</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/portugues/05---morfologia-ii---verbos/verbo">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 29-->
+                <p class="tituloaba1" id="verbos_iii">AULAS DA LIÇÃO - Verbos III</p>
+                <div id="container_aula">
+                  <p id="palavra2">Verbos | Ao vivo</p>
+                  <p><a href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/verbosaovivo">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+
+
+                <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
+              </nav>
+            </div>
+
+          </nav>
         </div>
         <!-- Menu de QUÍMICA-->
         <div class="texto-conexao-enem2" id="QUIMICA">
           <nav class="container-propaganda">
             <div class="tabela_menuPequeno" id="aulasquimica">
-           </div>
-              <!-- Menu de QUÍMICA Volume 1 -->
-              <div class="descricao_tabela" id="quimicaAno1">
-                <p class="tituloaba1" id="propriedaes_da_materia_v1">Aulas da lição – PROPRIEDADES DA MATÉRIA</p>
-                  <nav class="tabela3">
-                    <div id="container_aula">
-                      <h1 id="palavra2">Substâncias e misturas</h1>
-                      <a
-                        href="https://plataforma.aulalivre.net/disciplina/quimica/01---estrutura-atomica/misturas-e-substancias">
-                        <p><img src="acess/videos-solid-24.png" alt="Assistente de vídeo"></p>
-                      </a>
-                    </div>                   
-                    <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
-                  </nav>
-              </div>
+              <!--                    
+            <button id="btn-mobile15" class="botao-aulas" onclick="quimAno1()" href="">QUÍMICA - VOLUME 1</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="quimAno2()" href="">QUÍMICA - VOLUME 2</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="quimAno3()" href="">QUÍMICA - VOLUME 3</button>
+-->
+            </div>
+            <!-- Menu de QUÍMICA Volume 1 -->
+            <div class="descricao_tabela" id="quimicaAno1">
+              <nav class="tabela3">
+                <!--Volume 1-->
+                <p class="tituloaba1" id="estados_fisicos_da_materia">AULAS DA LIÇÃO - Estados Físicos da Matéria</p>
+                <div id="container_aula">
+                  <p id="palavra2">Estados físicos e mudanças de estado</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/quimica/01---estrutura-atomica/estados-fisicos-e-mudancas-de-estado">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 2-->
+                <p class="tituloaba1" id="sistemas_diferencas_fisicas_quimicas">AULAS DA LIÇÃO - Sistemas - Diferenças
+                  Físicas e Químicas</p>
+                <div id="container_aula">
+                  <p id="palavra2">Transformações químicas e físicas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/quimica/01---estrutura-atomica/transfomacoes-quimicas-e-fisicas">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 3-->
+                <p class="tituloaba1" id="separacao_de_misturas_i">AULAS DA LIÇÃO - Separação de Misturas I</p>
+                <div id="container_aula">
+                  <p id="palavra2">Separação de mistura heterogênea</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/quimica/01---estrutura-atomica/separacao-de-mistura-heterogenea">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 4-->
+                <p class="tituloaba1" id="separacao_de_misturas_ii">AULAS DA LIÇÃO - Separação de Misturas II</p>
+                <div id="container_aula">
+                  <p id="palavra2">Separação de mistura homogênea</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/quimica/01---estrutura-atomica/separacao-de-misturas-homogenea">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 5-->
+                <p class="tituloaba1" id="atomo">AULAS DA LIÇÃO - Átomo</p>
+                <div id="container_aula">
+                  <p id="palavra2">Estrutura atômica</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/quimica/01---estrutura-atomica/estrutura-atomica">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 6-->
+                <p class="tituloaba1" id="atomistica_eletrosfera">AULAS DA LIÇÃO - Atomística: Eletrosfera</p>
+                <div id="container_aula">
+                  <p id="palavra2">Distribuição eletrônica</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/quimica/01---estrutura-atomica/distribuicao-eletronica">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 7-->
+                <p class="tituloaba1" id="tabela_periodica">AULAS DA LIÇÃO - Tabela Periódica</p>
+                <div id="container_aula">
+                  <p id="palavra2">Tabela periódica</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/quimica/02---tabela-periodica/tabela-periodica-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Propriedades da tabela</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/quimica/02---tabela-periodica/propriedades-da-tabela">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 8-->
+                <p class="tituloaba1" id="ligacoes_quimicas">AULAS DA LIÇÃO - Ligações Químicas</p>
+                <div id="container_aula">
+                  <p id="palavra2">Ligação iônica</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/quimica/03---ligacoes-quimicas/ligacao-ionica">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 9-->
+                <p class="tituloaba1" id="ligacao_covalente">AULAS DA LIÇÃO - Ligação Covalente</p>
+                <div id="container_aula">
+                  <p id="palavra2">Ligação covalente</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/quimica/03---ligacoes-quimicas/ligacao-covalente">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 10-->
+                <p class="tituloaba1" id="propriedades_das_substancias">AULAS DA LIÇÃO - Propriedades das Substâncias
+                </p>
+                <div id="container_aula">
+                  <p id="palavra2">Substâncias e misturas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/quimica/01---estrutura-atomica/misturas-e-substancias">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 11-->
+                <p class="tituloaba1" id="funcoes_inorganicas">AULAS DA LIÇÃO - Funções Inorgânicas</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Sais</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/quimica/04---funcoes-inorganicas/sais">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Teorias modernas de ácidos e bases</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/quimica/04---funcoes-inorganicas/teorias-modernas-de-acidos-e-bases">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Ácidos</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/quimica/04---funcoes-inorganicas/acidos">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Bases</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/quimica/04---funcoes-inorganicas/bases">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Óxidos</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/quimica/04---funcoes-inorganicas/oxidos">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 12-->
+                <p class="tituloaba1" id="reacoes_inorganicas">AULAS DA LIÇÃO - Reações Inorgânicas</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Reações químicas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/quimica/05---reacoes-quimicas/reacoes-quimicas">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 14-->
+                <p class="tituloaba1" id="compostos_organicos">AULAS DA LIÇÃO - Compostos Orgânicos</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Introdução à química orgânica</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/quimica/15---compostos-organicos/introducao-a-quimica-organica">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Nomenclatura e hidrocarbonetos</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/quimica/15---compostos-organicos/nomenclatura-e-hidrocarbonetos">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
+              </nav>
+            </div>
           </nav>
         </div>
         <!-- Menu de REDAÇÃO-->
         <div class="texto-conexao-enem2" id="REDACAO">
           <nav class="container-propaganda">
             <div class="tabela_menuPequeno" id="aulasredacao">
-           </div>
+              <!--                            
+            <button id="btn-mobile15" class="botao-aulas" onclick="redAno1()" href="">REDAÇÃO - VOLUME 1</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="redAno2()" href="">REDAÇÃO - VOLUME 2</button>
+            <button id="btn-mobile15" class="botao-aulas" onclick="redAno3()" href="">REDAÇÃO - VOLUME 3</button>
+-->
+            </div>
             <!-- Menu de REDAÇÃO 1 -->
             <div class="descricao_tabela" id="redacaoAno1">
-              <p class="tituloaba1" id="variacao_linguistica_v1">AULAS DA LIÇÃO - Gramática e Variação linguística</p>
-                <nav class="tabela3">
-                  <!-- Questão 6 | Enem 2018 -->
-                  <div id="container_aula">
-                    <h1 id="palavra2">Questão 6 | Norma padrão | Enem 2018</h1>
-                    <a href="https://plataforma.aulalivre.net/disciplina/questoes-enem/enem-2018-linguagens-codigos-e-suas-tecnologias-caderno-amarelo/questao6-enem2018">
-                      <p><img src="acess/videos-solid-24.png" alt="Assistente de vídeo"></p>
-                    </a>
-                  </div>
-                  <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>                                                  
-                </nav>               
-            </div>           
+              <nav class="tabela3">
+                <!--Volume 1-->
+                <p class="tituloaba1" id="orientacoes_gerais">AULAS DA LIÇÃO - Orientações Gerais</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Guia de redação do Enem - Que bicho é esse?</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/redacao/08--guia-de-redacao-enem/guia-de-redacao-enem-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Guia de redação do Enem | Se liga na escrita!</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/redacao/08--guia-de-redacao-enem/guia-de-redacao-enem-iii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Guia de redação do Enem | Competência 2: Texto dissertativo argumentativo</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/redacao/08--guia-de-redacao-enem/guia-de-redacao-enem-v">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Variações Linguísticas</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/14---nocoes-elementares-de-estilistica/aulalivrenetvariacao-linguistica-reprise-2018">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 2-->
+                <p class="tituloaba1" id="niveis_de_linguagem">AULAS DA LIÇÃO - Níveis de Linguagem</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Linguagem II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/redacao/05---aspectos-da-linguagem/linguagem-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Vícios de Linguagem</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/redacao/04---semantica/vicio-de-linguagem">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Linguagem III</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/redacao/05---aspectos-da-linguagem/linguagem-iii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Vícios de Linguagem</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/redacao/04---semantica/vicio-de-linguagem">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Funções da Linguagem</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/14---nocoes-elementares-de-estilistica/funcoes-da-linguagem-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 3-->
+                <p class="tituloaba1" id="redacao_funcoes_linguagem">AULAS DA LIÇÃO - A Redação e as Funções de
+                  Linguagem</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Funções da Linguagem</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/portugues/14---nocoes-elementares-de-estilistica/funcoes-da-linguagem-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 4-->
+                <p class="tituloaba1" id="como_comecar">AULAS DA LIÇÃO - Como Começar</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Tipos de Introdução para Redação</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo-tipos-de-introd-para-redacao-red-24">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Elementos para uma boa redação I</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/redacao/02---dissertacao/elementos-para-uma-boa-redaca-i">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Elementos para uma boa redação II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/redacao/02---dissertacao/elementos-para-uma-boa-redacao-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Conceito de Narração</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/redacao/01---narracaodescricao/conceito-e-narracao">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Descrição</p>
+                  <p><a href="https://plataforma.aulalivre.net/disciplina/redacao/01---narracaodescricao/descricao">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Guia de redação do Enem | Competência 1: Dominando o português</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/redacao/08--guia-de-redacao-enem/guia-de-redacao-enem-iv">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Como construir boas redações</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/redacao/02---dissertacao/aulalivrenetcorrecao-redacao-reprise2019">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Construindo uma redação</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/redacao/02---dissertacao/construindo-uma-radacao">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 5-->
+                <p class="tituloaba1" id="desenvolvimento_dissertacao">AULAS DA LIÇÃO - O Desenvolvimento da Dissertação
+                </p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Guia de redação do Enem | Competência 2: Texto dissertativo argumentativo</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/redacao/08--guia-de-redacao-enem/guia-de-redacao-enem-v">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <p class="tituloaba1" id="conclusao">AULAS DA LIÇÃO - Conclusão</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Guia de redação do Enem | Competência 5: Desvendendo o segredo da proposta de
+                    intervenção perfeita</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/redacao/08--guia-de-redacao-enem/guia-de-redacao-enem-vii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Monitoria - Solucionando as dúvidas mais comuns sobre a redação do Enem</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/redacao/02---dissertacao/monitoria--duvidas-redacao-enem">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Linguagem II</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/redacao/05---aspectos-da-linguagem/linguagem-ii">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
+              </nav>
+            </div>
           </nav>
         </div>
         <!-- Menu de SOCIOLOGIA-->
         <div class="texto-conexao-enem2" id="SOCIOLOGIA">
           <nav class="container-propaganda">
-              <div class="tabela_menuPequeno" id="aulassociologia">
-             </div>
-              <!-- Menu de SOCIOLOGIA 1 -->
-              <div class="descricao_tabela" id="sociologiaAno1">
-                <p class="tituloaba1" id="movimentos_sociais_v1">AULAS DA LIÇÃO - DIREITOS DOS CIDADÃOS E MOVIMENTOS SOCIAIS</p>
-                <nav class="tabela3">
-                  <div id="container_aula">
-                    <h1 id="palavra2">Movimentos Sociais</h1>
-                    <a href="https://plataforma.aulalivre.net/disciplina/sociologia/02---estratificacao-social/movimentos-sociais">
-                      <p><img src="acess/videos-solid-24.png" alt="Assistente de vídeo"></p>
-                    </a>
-                  </div>
-                  <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
-                </nav>
-              </div>
+            <div class="tabela_menuPequeno" id="aulassociologia">
+              <!--                                    
+              <button id="btn-mobile15" class="botao-aulas" onclick="socAno1()" href="">SOCIOLOGIA - VOLUME 1</button>
+              <button id="btn-mobile15" class="botao-aulas" onclick="socAno2()" href="">SOCIOLOGIA - VOLUME 2</button>
+              <button id="btn-mobile15" class="botao-aulas" onclick="socAno3()" href="">SOCIOLOGIA - VOLUME 3</button>
+-->
+            </div>
+            <!-- Menu de SOCIOLOGIA 1 -->
+            <div class="descricao_tabela" id="sociologiaAno1">
+              <nav class="tabela3">
+                <!--Volume 1-->
+                <p class="tituloaba1" id="direitos_cidadaos_movimentos_sociais">AULAS DA LIÇÃO - Direitos dos Cidadãos e
+                  Movimentos Sociais</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Movimentos Sociais</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/sociologia/02---estratificacao-social/movimentos-sociais">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <div id="container_aula">
+                  <p id="palavra2">Direitos Humanos</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/sociologia/02---estratificacao-social/direitos-humanos">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+                <!--Volume 3-->
+                <p class="tituloaba1" id="brasil_e_o_mundo">AULAS DA LIÇÃO - Brasil e o Mundo</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Indústria Cultural no Brasil</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/aulas-ao-vivo/reprises/aula-ao-vivo-fil-industria-cultural-no-brasil">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <!--Volume 4-->
+                <p class="tituloaba1" id="a_sociologia_e_o_povo_brasileiro">AULAS DA LIÇÃO - A Sociologia e o Povo
+                  Brasileiro</p>
+
+                <div id="container_aula">
+                  <p id="palavra2">Intérpretes do Brasil</p>
+                  <p><a
+                      href="https://plataforma.aulalivre.net/disciplina/sociologia/01---sociologia-classica/interpretes-do-brasil">
+                      <img src="acess/videos-solid-24.png" alt=""></a></p>
+                </div>
+
+                <button id="voltar" class="botao-aulas" onclick="voltar()" href="">Voltar</button>
+              </nav>
+            </div>
           </nav>
-    </div>
+        </div>
   </main>
   <script src="./js/index.js"></script>
 </body>
+
 </html>
