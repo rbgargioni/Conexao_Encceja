@@ -54,9 +54,7 @@ function arte_moderna() { clickMenu1(); var secaoID = "arte_moderna"; var elemen
 function arte_contemporanea() { clickMenu1(); var secaoID = "arte_contemporanea"; var elementoSecao = document.getElementById(secaoID); if (elementoSecao) { var posicaoSecao = elementoSecao.getBoundingClientRect().top; window.scrollTo({ top: window.scrollY + posicaoSecao - 80, behavior: "smooth" }); } else { console.error("ID da seção não encontrado: " + secaoID); } }
 function cultura_artistica() { clickMenu1(); var secaoID = "cultura_artistica"; var elementoSecao = document.getElementById(secaoID); if (elementoSecao) { var posicaoSecao = elementoSecao.getBoundingClientRect().top; window.scrollTo({ top: window.scrollY + posicaoSecao - 80, behavior: "smooth" }); } else { console.error("ID da seção não encontrado: " + secaoID); } }
 
-
 ///BIOLOGIA 1
-
 function procariontes_eucariontes() { clickMenu2();  var secaoID = "procariontes_eucariontes"; var elementoSecao = document.getElementById(secaoID); if (elementoSecao) { var posicaoSecao = elementoSecao.getBoundingClientRect().top; window.scrollTo({ top: window.scrollY + posicaoSecao - 80, behavior: "smooth" }); } else { console.error("ID da seção não encontrado: " + secaoID); } }
 function citologia1() { clickMenu2();  var secaoID = "citologia_1"; var elementoSecao = document.getElementById(secaoID); if (elementoSecao) { var posicaoSecao = elementoSecao.getBoundingClientRect().top; window.scrollTo({ top: window.scrollY + posicaoSecao - 80, behavior: "smooth" }); } else { console.error("ID da seção não encontrado: " + secaoID); } }
 function bioquimica_celular() { clickMenu2();  var secaoID = "bioquimica_celular"; var elementoSecao = document.getElementById(secaoID); if (elementoSecao) { var posicaoSecao = elementoSecao.getBoundingClientRect().top; window.scrollTo({ top: window.scrollY + posicaoSecao - 80, behavior: "smooth" }); } else { console.error("ID da seção não encontrado: " + secaoID); } }
